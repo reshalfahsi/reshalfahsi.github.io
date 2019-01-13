@@ -25,7 +25,7 @@ permalink: /about/
 
 ## Education
 ### Universitas Gadjah Mada, Indonesia
->B.Eng., Electrical Engineering, 2016-2020(expected).
+_B.Eng., Electrical Engineering, 2016-2020(expected)._
 >Control and Instrumentation Engineering.
 
 ## Publication
