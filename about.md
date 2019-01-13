@@ -24,14 +24,17 @@ permalink: /about/
 
 
 ## Education
-### Universitas Gadjah Mada, Indonesia</strong><br>
+### Universitas Gadjah Mada, Indonesia
 B.Eng., Electrical Engineering, 2016-2020(expected).
+
 Control and Instrumentation Engineering.
 
 ## Publication
-### Motion Planning in Dynamic Environment for Middle Size League using Theta* and Polynomial Trajectory Generator</strong><br>
+### Motion Planning in Dynamic Environment for Middle Size League using Theta* and Polynomial Trajectory Generator
 Rahman, Fahri Ali, Rudy Tri Hartanto, Revaldy Imani Chairistian, Yahya Abdurrahman, Okta Fajar Suryani,Maria Veronica Astrid, Resha Dwika Hefni Al-Fahsi, and Igi Ardiyanto.
+
 5th Indonesian Symposium on Robotic Systems and Control, 6 Juli 2017.
+
 [pdf](http://digilib.mercubuana.ac.id/manager/t!@file_artikel_abstrak/Isi_Artikel_877216399578.pdf)
 
 ## Contact me
