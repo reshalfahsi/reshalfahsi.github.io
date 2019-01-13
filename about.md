@@ -34,5 +34,15 @@ _Rahman, Fahri Ali, Rudy Tri Hartanto, Revaldy Imani Chairistian, Yahya Abdurrah
 >5th Indonesian Symposium on Robotic Systems and Control, 6 Juli 2017.
 >[ [pdf](http://digilib.mercubuana.ac.id/manager/t!@file_artikel_abstrak/Isi_Artikel_877216399578.pdf) ]
 
+## Academic Experience
+### Universitas Gadjah Mada
+* Lecturer Assistant, Basic Programming, 2017
+* Tutor, Electrical Engineering Physics, 2017
+
+## Language
+* Indonesian (native)
+* Javanese (native)
+* English
+
 ## Contact me
 [resha.dwika.hefni.alfahsi@mail.ugm.ac.id](mailto:resha.dwika.hefni.alfahsi@mail.ugm.ac.id)
