@@ -364,12 +364,12 @@ They can't be added directly but we can add an image with a link to the video
 ```no-highlight
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=UbIPKktQGfU" target="_blank"><img src="/images/demo_vid.png" alt="IMAGE ALT TEXT HERE" width="480" height="360"/></a>
 ```
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=UbIPKktQGfU" target="_blank"><img src="/images/demo_vid.png" alt="IMAGE ALT TEXT HERE" width="480" height="360"/></a>
+<a href="https://www.youtube.com/watch?v=P9KTu0k6qgQ" target="_blank"><img src="/images/demo_vid.png" alt="IMAGE ALT TEXT HERE" width="480" height="360"/></a>
 
 or in pure markdown, but losing the image sizing and border  
 ```no-highlight
 [![IMAGE ALT TEXT HERE](/images/demo_vid.png)](https://www.youtube.com/watch?v=UbIPKktQGfU)
 ```
-[![IMAGE ALT TEXT HERE](/images/demo_vid.png)](https://www.youtube.com/watch?v=UbIPKktQGfU)
+[![IMAGE ALT TEXT HERE](/images/demo_vid.png)](https://www.youtube.com/watch?v=P9KTu0k6qgQ)
 
 You can create an embedded youtube videos screenshoot from this [w3shools tutorial](https://www.w3schools.com/html/html_youtube.asp).
