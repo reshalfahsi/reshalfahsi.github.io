@@ -1,2 +1,2 @@
-# My Static Page
+# My Static Website
 currently using __Jekyll Now__
