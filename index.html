@@ -1,17 +1,33 @@
----
-layout: default
----
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="yandex-verification" content="870e3f30e5908530" />
+	<meta charset="UTF-8">
+	<title>Website of Resha Al-Fahsi</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<style>
+	body {
+	    font-family: 'Roboto';font-size: 22px;
+	}
+	</style>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+</head>
+<body>
+	<center><h1> Resha Dwika Hefni Al-Fahsi </h1><center>
+		
+		<br>
+		<br>
+		<a href="mailto:resha.alfahsi@gmail.com">E-mail</a>
+		<br>
+		<a href="https://t.me/reshalfahsi">Twitter</a>
+		<br>
+		<a href="https://instagram.com/reshalfahsi">Instagram</a>
+		<br>
+		<a href="https://github.com/reshalfahsi">GitHub</a>
+		<br>
+		<a href="https://bit.ly/CV_RESHA">CV</a>
+		
+</body>
+</html>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-      <a href="{{ site.baseurl }}{{ post.url }}"><i>Read More..</i></a>
-    </article>
-  {% endfor %}
-</div>
