@@ -41,8 +41,8 @@ var myimages=new Array()
 myimages=["https://i.ibb.co/PmBFVg3/aiengineermeme.png", "https://i.ibb.co/VNQVR9X/jian-yang-hot-dog-gif.gif"]
 
 var ry=Math.floor(Math.random()*myimages.length)
-//if (ry==0)
-//ry=1
+if (ry>=myimages.length)
+ry = myimages.length - 1 
 document.write('<img src="'+myimages[ry]+'" width="500" height="250" style="width:50%; height:25%;">')
 }
 random_imglink()
