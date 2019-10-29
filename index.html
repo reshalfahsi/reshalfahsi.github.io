@@ -30,10 +30,28 @@ a:active {
   text-decoration: none;
 }
 </style>
+<center><h1> Welcome to My Simple Website! </h1><center>
 </head>
+
+<script language="JavaScript">
+
+function random_imglink(){
+var myimages=new Array()
+
+myimages=["https://i.ibb.co/PmBFVg3/aiengineermeme.png", "https://i.ibb.co/VNQVR9X/jian-yang-hot-dog-gif.gif"]
+
+var ry=Math.floor(Math.random()*myimages.length)
+if (ry==0)
+ry=1
+document.write('<img src="'+myimages[ry]+'" width="500" height="250" style="width:50%; height:25%;">')
+}
+random_imglink()
+
+</script>
+
 <body>
-	<center><h1> Welcome to My Simple Website! </h1><center>
-		<img src="https://i.ibb.co/PmBFVg3/aiengineermeme.png" width="500" height="250" style="width:50%; height:25%;" >
+
+		<!--img src="https://i.ibb.co/PmBFVg3/aiengineermeme.png" width="500" height="250" style="width:50%; height:25%;" -->
 		<br><u>
 		<a href="https://bit.ly/CV_RESHA">About Me</a></u>
 		<a> | </a><u>
