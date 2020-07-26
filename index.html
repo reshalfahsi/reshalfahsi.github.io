@@ -6,13 +6,11 @@
 	<meta charset="UTF-8">
 	<title>Website of Resha Al-Fahsi</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 	body {
 	    font-family: 'Roboto';font-size: 22px;
 	}
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
 a:link {
   text-decoration: none;
 }
@@ -22,16 +20,47 @@ a:visited {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
   text-decoration: none;
 }
+
+/** Site header */
+.site-header { border-top: 5px solid #424242; border-bottom: 1px solid #e8e8e8; min-height: 56px; position: relative; }
+
+.site-title { font-size: 36px; line-height: 56px; letter-spacing: -1px; margin-bottom: 0; float: auto; }
+.site-title, .site-title:visited { color: #424242; }
+
+/** Wrapper */
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+
+/** Clearfix */
+.wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
+
+/** Site footer */
+.site-footer { border-top: 1px solid #e8e8e8; padding: 30px 0; }
+
 </style>
-<center><h1> Welcome to My Simple Website! </h1><center>
+
 </head>
 
+<body>
+
+<header class="site-header">
+<div class="wrapper">
+<center><h1> 
+<a class="site-title" href="https://reshalfahsi.github.io">
+Welcome to Resha Al-Fahsi's Simple Website! 
+</a>
+</h1></center>
+</div>
+</header>
+
+<center>
+<br>
 <script language="JavaScript">
 
 function random_imglink(){
@@ -48,14 +77,14 @@ document.write('<img src="'+myimages[ry]+'" width="500" height="250" style="widt
 random_imglink()
 
 </script>
-
-<body>
-
+</center>
+<div class="wrapper">
+<center>
 		<!--img src="https://i.ibb.co/PmBFVg3/aiengineermeme.png" width="500" height="250" style="width:50%; height:25%;" -->
 		<br><u>
 		<a href="https://bit.ly/RESHA_NEW_CV">About Me</a></u>
 		<a> | </a><u>
-		<a href="https://reshalfahsi.github.io">Blog Post</a></u>
+		<a href="blog/index.html">Blog Post</a></u>
 		<a> | </a><u>
 		<a href="https://scholar.google.co.id/citations?user=ItPhnycAAAAJ&hl=id">My Publications</a></u>
 		<a> | </a><u>
@@ -63,6 +92,11 @@ random_imglink()
 		<br>
 		<br>
 		<br>
+</center>
+</div>
+<footer class="site-footer">
+<div class="wrapper">
+<center>
 		<a href="mailto:resha.alfahsi@gmail.com">
 		<img src="https://cdn.pixabay.com/photo/2016/01/26/17/15/gmail-1162901_960_720.png" alt="" width="42" height="35">
 		</a>
@@ -85,8 +119,9 @@ random_imglink()
 		<img src="https://image.flaticon.com/icons/svg/174/174857.svg" alt="" width="35" height="35">
 		</a>
 		<!--br-->
-		
-		
+</center>
+</div>		
+</footer>		
 </body>
 </html>
 
