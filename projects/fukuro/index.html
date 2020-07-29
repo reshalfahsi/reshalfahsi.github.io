@@ -79,22 +79,47 @@
 		  <p><b>Mechanical System</b></p>
 		  <center>
 			<img src="https://reshalfahsi.github.io/projects/img/mechanicalsystem.png" alt="" width="200" height="400" >
-			<img src="https://reshalfahsi.github.io/projects/img/mechanicaldesign02.png" alt="" width="190" height="200" >
 	       	  </center>
 		  <br>
-		  <p>The robot mechanical system consists of five base tiers. At the first base, there are three 90° Swedish wheels. Each of the wheels connected to the planetary gear motor with 20 kgf.cm torque using chain mechanism. On the second base, there are a dribbler and a kicker mechanism. The dribbler consists of two motors that keeping the ball attached to the robot. The kicker consists of a plunger and a solenoid. The plunger is driven by the solenoid to kick the ball. The robot uses a laptop PC as a main controller which placed on the third base. In order to detect the ball and another robot in the field, the robot is equipped with vision system. The vision system consists of a camera and a convex mirror. The camera is projected upwards on the fourth base and the convex mirror is stick to the bottom side of the fifth base. This configuration allows the robot to see 360° in the field. <br></p>
-                  <p><b>Electronic System</b></p>
+		  <p>The robot mechanical system consists of five base tiers which most of the material used to make the robot is aluminum. At the first base, there are three 90° Swedish wheels. Each of the wheels connected to the planetary gear motor with 20 kgf.cm torque using chain mechanism. On the second base, there are a dribbler and a kicker mechanism. The dribbler consists of two motors that keeping the ball attached to the robot. The kicker consists of a plunger and a solenoid. The plunger is driven by the solenoid to kick the ball. </p> 
 		  <center>
+                  	<img src="https://reshalfahsi.github.io/projects/img/mechanicaldesign02.png" alt="" width="190" height="200" >
+		  </center>
+                  <br>
+                  <p>The robot uses a laptop PC as a main controller which placed on the third base. In order to detect the ball and obstacles in the field, the robot is equipped with vision system. The vision system consists of a camera and a convex mirror. The camera is projected upwards on the fourth base and the convex mirror is stick to the bottom side of the fifth base. This configuration allows the robot to see 360° in the field. <br></p>
+                  <p><b>Electronic System</b></p>
+		  
+		  <p> The robot electronic system consists of main controller board, arduino board, power supply unit and motor driver. The STM32F446-Nucleo is used as main microcontroller in the robot. This microcontroller controls the wheel motors, dribbler motors, and kicker mechanism. It also processes the input data from encoder and infrared sensor. The main board communicates with the laptop as main controller using serial communication. In addition to the main board, additional board is provided for user input from the push button. This additional board use Arduino Nano as the controller. The board also process data from IMU to provide heading reference. This board also use serial communication with the laptop. There are 2 batteries in the electronic system, 6-cell LiPo 3000 mAh and 3-cell lipo 2000 mAh. The 3-cell lipo battery operates at 12V and supplying the kicker mechanism. The 6-cell lipo battery operates at 24V and it is used for supplying motor also used to power the whole robot. MOSFET IRF540 has been used for regulating and supplying 12V to the motor PG-36. UBEC is used to regulating and supplying 5V to the rest of the circuit. </p> 
+
+	          <center>
 			<img src="https://reshalfahsi.github.io/projects/img/electronicsystem.png" alt="" width="300" height="500" >
 	       	  </center>
-		  <br>
-		  <p> The robot electronic system consists of main controller board, arduino board, power supply unit and motor driver. The STM32F446-Nucleo is used as main microcontroller in the robot. This microcontroller controls the wheel motors, dribbler motors, and kicker mechanism. It also processes the input data from encoder and infrared sensor. The main board communicates with the laptop as main controller using serial communication. In addition to the main board, additional board is provided for user input from the push button. This additional board use Arduino Nano as the controller. The board also process data from IMU to provide heading reference. This board also use serial communication with the laptop. There are 2 batteries in the electronic system, 6-cell LiPo 3000 mAh and 3-cell lipo 2000 mAh. The 3-cell lipo battery operates at 12V and supplying the kicker mechanism. The 6-cell lipo battery operates at 24V and it is used for supplying motor also used to power the whole robot. MOSFET IRF540 has been used for regulating and supplying 12V to the motor PG-36. UBEC is used to regulating and supplying 5V to the rest of the circuit. Fukurō motor driver module with IC BTN 7970 is used to control the DC motors in the robot. The module is designed to operate in 2 driving direction with 3x H-Bridge Driver Motor, 2x Half Bridge Driver Motor, Maximum Voltages 45V, Maximum Current 20A. The driver motor used to control both the wheel and dribbler motors. The kicker mechanism consists of 1000 turn winding solenoid mounted onto the base of the robot. It is powered by a 350V 5 mF capacitor, which is charged by a step-up converter at 350V. Optocoupler with IGBT relays controlled by the STM32F446-Nucleo act as switches to control the charging and discharging of the apacitor. A kick is actuated by a 15 ms pulse of current at 350V from the capacitor to the solenoid.<br></p>
+		  <br>		
+
+		  <p> Fukurō motor driver module with IC BTN 7970 is used to control the DC motors in the robot. The module is designed to operate in 2 driving direction with 3x H-Bridge Driver Motor, 2x Half Bridge Driver Motor, Maximum Voltages 45V, Maximum Current 20A. The driver motor used to control both the wheel and dribbler motors. The kicker mechanism consists of 1000 turn winding solenoid mounted onto the base of the robot. It is powered by a 350V 5 mF capacitor, which is charged by a step-up converter at 350V. Optocoupler with IGBT relays controlled by the STM32F446-Nucleo act as switches to control the charging and discharging of the apacitor. A kick is actuated by a 15 ms pulse of current at 350V from the capacitor to the solenoid.<br></p>
 		  <p><b>Software Architecture</b></p>
 		  <center>
 			<img src="https://reshalfahsi.github.io/projects/img/softwarearchitecture.png" alt="" width="300" height="500" >
 	       	  </center>
 		  <br>
-		  <p>The software architecture is distributed among several computational units. Higher computational load is processed on the laptop while lower computational load is processed on microcontrollers. The two microcontroller is used as sub-controller. Arduino microcontroller provides user input via push button and process IMU data. STM32-Nucleo controls the motor driver and reads encoder inputs. On the laptop side, the overall process is divided into three sub-process. The robot uses ROS as middleware to synchronize the sub-process. <br></p>
+		  <p>The software architecture is distributed among several computational units. Higher computational load is processed on the laptop while lower computational load is processed on microcontrollers. The two microcontroller is used as sub-controller. Arduino microcontroller provides user input via push button and process IMU data. STM32-Nucleo controls the motor driver and reads encoder inputs. On the laptop side, the overall process is divided into three sub-process: vision system, strategy and hardware controller. The robot uses ROS as middleware to synchronize the sub-process.</p> 
+		  <center>
+			<img src="https://reshalfahsi.github.io/projects/img/vision.png" alt="" width="400" height="600" >
+	       	  </center>
+		  <br>
+		<p> The vision system is based on catadiatropic system which projected the camera to a convex mirror to achieve 360° field of view. The Logitech C920 web camera on the fourth base delivers image with VGA resolution at 30 fps. The camera is used for ball, obstacles and field detection. The result of detection is obtained by performing color segmentation using color lookup table. The lookup table is defined in HSI color space. The detection’s result is then published as ROS topic to be used by the other node. </p>
+
+		<p> The strategy sub-process are responsible to decide the behavior of the robot. The module receives ball position information from the vision sub-process and
+publish robot velocity vector. This module also receives input from push button and odometry information from hardware controller sub-process. The behaviors of the robot are defined using Finite State
+Machine approach. Current implementation of robot’s basic behavior are <b>GotoHome</b>, <b>SearchBall</b>, <b>ApproachBall</b>, <b>DribbleBall</b>, and <b>Shoot</b>. </p>
+		<center>
+			<img src="https://reshalfahsi.github.io/projects/img/hwgui.png" alt="" width="400" height="600" >
+	       	</center>
+		<br>
+		<p> The hardware controller process all computations and services that need to be execute by the STM32-Nucleo and Arduino Nano Board such as odometry computation and button input. It also serve as tuning interface for motor control. To make easy such functionality, Graphical User Interface (GUI) is provided. In the GUI, encoder reading is plotted and odometry information is visualized. Additionally, there are buttons for tuning motion
+control of the robot. <br></p>
+
+
 		  <p><b>Publications</b></p>
 		  <ul>
 			<div class="list__item">
