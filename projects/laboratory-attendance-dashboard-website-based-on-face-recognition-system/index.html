@@ -78,10 +78,17 @@
                   <p>This project is used as an attendance system in the laboratory which the CCTV installed for monitoring the laboratory 24/7. The face recognition system was built using Tiny Face Detector and Dlib framework. The dashboard design was built using Dash by Plotly. The face recognition system data is sent to dashboard using ZeroMQ. All of works are written in Python.</p>
 
 		<p><b>Face Recognition System</b></p>
-		<p> The face recognition system consists of Tiny Face Detector by Peiyun Hu and Deva Ramanan for the detection and Dlib by Davis King for the recognition. The Tiny Face Detector is used to detect any sized face that present in the CCTV frame due to the quality of the CCTV and the size of the face in the frame which makes face detection a little bit harder.</p>
+		<p> The face recognition system consists of Tiny Face Detector by Peiyun Hu and Deva Ramanan for the detection and Dlib by Davis King for the recognition. The Tiny Face Detector is used to detect any sized face that present in the CCTV frame due to the quality of the CCTV and the size of the face in the frame which makes face detection a little bit harder. </p> 
+
+		<center>
+			<img src="https://reshalfahsi.github.io/projects/img/tinyfacedetector.png" width=600 height=600>
+		</center>
+		<br>
+		<p> Tiny Face Detector will create three copy every footage frame scaled into different sizes. These three copies of the image, first one will be scaled twice of its size, the second one will be scaled half of its size and the last one has a normal size image. Then, that three copies feed into a shared CNNs model which is used the pretrained ResNet101 model to predict the potential face location on the image. After that, the face location data merged and ranked the best face location on the image using non-maximum suppression (NMS) at the original image resolution.</p>
+		<p>Dlib is used for recognizing faces that were detected before. Every faces mapped into 128-dimensional vector space and Euclidian distance is calculated to measure the similarity between face from dataset and face from the footage at a certain distance threshold. Using a single image dataset, the face recognition model can distinguish different faces and recognized them. Dlib used deep metric learning to train the face feature detection model on the standard Labeled Face in the Wild (LFW) benchmark.</p>
 
 	        <p><b>Dashboard Website</b></p>
-                <p> Dashboard website is used for showing the analytical data such as the amount of people in the room, the video footage of face recognition result and the identity of people that presence in the room at that time. The dashboard is designed using Dash by Plotly.</p>
+                <p> Dashboard website is used for showing the analytical data such as the number of people in the room, the video footage of face recognition result, and the identity of people that presence in the room at that time. The dashboard is designed using Dash by Plotly since the development process is way more simple and compact in a single-file program. Every frame of face recognition video footage is serialized and then encoded into base64 encoding. Then, the dashboard website gets the video footage of face recognition result by deserialized and decode the base64 encoded data transferred using ZeroMQ framework. Besides, serialization of data pair contains name and image from a dataset of the detected person also encoded into base64 encoding and then sent to the dashboard using ZeroMQ, too. The serialization process of the name list is using JavaScript Object Notation (JSON).</p>
                </section>
                <footer class="page__meta"></footer>
                <section class="page__share">
