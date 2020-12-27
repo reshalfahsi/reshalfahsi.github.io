@@ -128,14 +128,14 @@ function draw() {
    pY = y;
   }
   else{
-   if (lastPt.x == null || lastPt.y == null) {
-    ctx.beginPath();
-    ctx.fillStyle = "#ebedef";
-    ctx.fillRect(0, 0, width, height);
+   //if (lastPt.x == null || lastPt.y == null) {
+   // ctx.beginPath();
+   // ctx.fillStyle = "#ebedef";
+   // ctx.fillRect(0, 0, width, height);
 
-    lastPt.x = x;
-    lastPt.y = y;
-   }
+   // lastPt.x = x;
+   // lastPt.y = y;
+   //}
 
    if(lastPt != null){
     // Set stroke weight to 10
