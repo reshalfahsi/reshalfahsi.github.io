@@ -172,8 +172,9 @@ function onTouchEnd(e){
 function onTouchUpdate(e){
   mobileMode = true;
   e.preventDefault();
-  x = e.touches[0].pageX;
-  y = e.touches[0].pageY;
+  const rect = canvas.getBoundingClientRect();
+  x = e.touches[0].pageX - rect.left;
+  y = e.touches[0].pageY - rect.top;
 }
 
 function getMousePos(canvas, e) {
