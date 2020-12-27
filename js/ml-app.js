@@ -26,7 +26,6 @@ let y = null;
 let mouseDown = false;
 let mobileMode = false;
 let lastPt = null;
-let islastPtNullPrev = false;
 
 setup();
 async function setup() {
@@ -132,36 +131,19 @@ function draw() {
    pY = y;
   }
   else{
-   //if (lastPt.x == null || lastPt.y == null) {
-   // ctx.beginPath();
-   // ctx.fillStyle = "#ebedef";
-   // ctx.fillRect(0, 0, width, height);
-
-   // lastPt.x = x;
-   // lastPt.y = y;
-   //}
 
    if(lastPt != null){
     
-    //if(islastPtNullPrev){
-      // ctx.moveTo(x, y);
-      //islastPtNullPrev = false;
-    //}
-    //else{
       // Set stroke weight to 10
       ctx.lineWidth = 10;
       // Set stroke color to black
       ctx.strokeStyle = "#000000";
       ctx.beginPath();
-      // ctx.lineCap = "round";
+
       ctx.moveTo(lastPt.x, lastPt.y);
       ctx.lineTo(x, y);
       ctx.stroke();
-    //}
    }
-   //else{
-   // islastPtNullPrev = true;
-   //}
 
    if(x != null && y != null){
      lastPt = {x:x, y:y};
