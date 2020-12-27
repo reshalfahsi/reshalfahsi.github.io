@@ -97,6 +97,8 @@ function clearCanvas() {
   ctx.fillRect(0, 0, width, height);
   comment.textContent = `I'm 100% sure it is the blank space`;
   lastPt = null;
+  x = null;
+  y = null;
 }
 
 function draw() {
@@ -140,17 +142,18 @@ function draw() {
    //}
 
    if(lastPt != null){
-    // Set stroke weight to 10
-    ctx.lineWidth = 10;
-    // Set stroke color to black
-    ctx.strokeStyle = "#000000";
-    ctx.beginPath();
-    // ctx.lineCap = "round";
+    
     if(islastPtNullPrev){
       // ctx.moveTo(x, y);
       islastPtNullPrev = false;
     }
     else{
+      // Set stroke weight to 10
+      ctx.lineWidth = 10;
+      // Set stroke color to black
+      ctx.strokeStyle = "#000000";
+      ctx.beginPath();
+      // ctx.lineCap = "round";
       ctx.moveTo(lastPt.x, lastPt.y);
       ctx.lineTo(x, y);
       ctx.stroke();
@@ -160,7 +163,9 @@ function draw() {
     islastPtNullPrev = true;
    }
 
-   lastPt = {x:x, y:y};
+   if(x != null && y != null){
+     lastPt = {x:x, y:y};
+   }
   }
 
 }
@@ -183,11 +188,15 @@ function onMouseUpdate(e) {
 function onTouchStart(e){
   mobileMode = true;
   lastPt = null;
+  x = null;
+  y = null;
 }
 
 function onTouchEnd(e){
   e.preventDefault();
   lastPt = null;
+  x = null;
+  y = null;
   mobileMode = false;
   classifyCanvas();
 }
