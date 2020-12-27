@@ -128,12 +128,22 @@ function draw() {
    pY = y;
   }
   else{
+   if (lastPt.x == null || lastPt.y == null) {
+    ctx.beginPath();
+    ctx.fillStyle = "#ebedef";
+    ctx.fillRect(0, 0, width, height);
+
+    lastPt.x = x;
+    lastPt.y = y;
+   }
+
    if(lastPt != null){
     // Set stroke weight to 10
     ctx.lineWidth = 10;
     // Set stroke color to black
     ctx.strokeStyle = "#000000";
     ctx.beginPath();
+    ctx.lineCap = "round";
     ctx.moveTo(lastPt.x, lastPt.y);
     ctx.lineTo(x, y);
     ctx.stroke();
