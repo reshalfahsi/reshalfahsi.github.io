@@ -143,7 +143,7 @@ function draw() {
     // Set stroke color to black
     ctx.strokeStyle = "#000000";
     ctx.beginPath();
-    ctx.lineCap = "round";
+    // ctx.lineCap = "round";
     ctx.moveTo(lastPt.x, lastPt.y);
     ctx.lineTo(x, y);
     ctx.stroke();
