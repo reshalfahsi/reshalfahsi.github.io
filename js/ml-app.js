@@ -96,8 +96,8 @@ function clearCanvas() {
   ctx.fillRect(0, 0, width, height);
   comment.textContent = `I'm 100% sure it is the blank space`;
   lastPt = null;
-  x = null;
-  y = null;
+  // x = null;
+  // y = null;
 }
 
 function draw() {
@@ -145,9 +145,9 @@ function draw() {
       ctx.stroke();
    }
 
-   if(x != null && y != null){
+   //if(x != null && y != null){
      lastPt = {x:x, y:y};
-   }
+   //}
   }
 
 }
@@ -170,16 +170,12 @@ function onMouseUpdate(e) {
 function onTouchStart(e){
   mobileMode = true;
   lastPt = null;
-  x = null;
-  y = null;
+  //x = null;
+  //y = null;
 }
 
 function onTouchEnd(e){
   e.preventDefault();
-  
-  // lastPt = null;
-  // x = null;
-  // y = null;
   mobileMode = false;
   classifyCanvas();
 }
