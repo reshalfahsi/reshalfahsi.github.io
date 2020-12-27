@@ -194,12 +194,12 @@ function onTouchStart(e){
 
 function onTouchEnd(e){
   e.preventDefault();
-  classifyCanvas();
+  
   // lastPt = null;
   // x = null;
   // y = null;
   mobileMode = false;
-  
+  classifyCanvas();
 }
 
 function onTouchUpdate(e){
