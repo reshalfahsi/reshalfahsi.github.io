@@ -143,11 +143,11 @@ function draw() {
 
    if(lastPt != null){
     
-    if(islastPtNullPrev){
+    //if(islastPtNullPrev){
       // ctx.moveTo(x, y);
-      islastPtNullPrev = false;
-    }
-    else{
+      //islastPtNullPrev = false;
+    //}
+    //else{
       // Set stroke weight to 10
       ctx.lineWidth = 10;
       // Set stroke color to black
@@ -157,11 +157,11 @@ function draw() {
       ctx.moveTo(lastPt.x, lastPt.y);
       ctx.lineTo(x, y);
       ctx.stroke();
-    }
+    //}
    }
-   else{
-    islastPtNullPrev = true;
-   }
+   //else{
+   // islastPtNullPrev = true;
+   //}
 
    if(x != null && y != null){
      lastPt = {x:x, y:y};
