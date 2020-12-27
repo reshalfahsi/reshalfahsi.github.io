@@ -9,26 +9,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+	<!-- p5 -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    	<!-- ml5 -->
+    	<script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 </head>
 
 <body>
 
 <header class="site-header">
 <div class="wrapper">
-<center><h1> 
+<center><h2> 
 <a class="site-title" href="https://reshalfahsi.github.io">
 Welcome to Resha Al-Fahsi's Simple Website! 
 </a>
-</h1></center>
+</h2></center>
 </div>
 </header>
 
+<!--br>
 <center>
-<br>
-
 <script src="js/meme.js"></script>
+</center-->
+
+<center>
+
+<h3>Draw Something Here!</h3>
+
+<canvas width="280" height="280" id="myCanvas"></canvas>
+<br>
+<button id="clearBtn">Clear</button>
+<p style="font-size:16px" id="comment">I'm 100% sure it is the blank space!</p>
+
+<h4>What do you think about this?</h4>
+<input id="inputText" type="text" value=""/>
+<button id="submitBtn">Submit</button>
+<p style="font-size:16px" id="response">Please tell me!</p>
+
+<script src="js/ml-app.js"></script>
 
 </center>
+
 <div class="wrapper">
 <center>
 		<!--img src="https://i.ibb.co/PmBFVg3/aiengineermeme.png" width="500" height="250" style="width:50%; height:25%;" -->
