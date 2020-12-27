@@ -147,7 +147,7 @@ function draw() {
     ctx.beginPath();
     // ctx.lineCap = "round";
     if(islastPtNullPrev){
-      ctx.moveTo(x, y);
+      // ctx.moveTo(x, y);
       islastPtNullPrev = false;
     }
     else{
