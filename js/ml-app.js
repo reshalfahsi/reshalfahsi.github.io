@@ -24,6 +24,8 @@ let x = null;
 let y = null;
 
 let mouseDown = false;
+let mobileMode = false;
+let lastPt = null;
 
 setup();
 async function setup() {
@@ -37,9 +39,9 @@ async function setup() {
   canvas.addEventListener("mousedown", onMouseDown);
   canvas.addEventListener("mouseup", onMouseUp);
 
-  canvas.addEventListener("touchmove", onMouseUpdate);
-  canvas.addEventListener("touchstart", onMouseDown);
-  canvas.addEventListener("touchend", onMouseUp);
+  canvas.addEventListener("touchmove", onTouchUpdate);
+  canvas.addEventListener("touchstart", onTouchStart);
+  canvas.addEventListener("touchend", onTouchEnd);
 
   // Create a clear canvas button
   button = document.querySelector("#clearBtn");
@@ -98,30 +100,34 @@ function clearCanvas() {
 function draw() {
   request = requestAnimationFrame(draw);
 
-  if (pX == null || pY == null) {
+  if (mobileMode === false){
+   if (pX == null || pY == null) {
     ctx.beginPath();
     ctx.fillStyle = "#ebedef";
     ctx.fillRect(0, 0, width, height);
 
     pX = x;
     pY = y;
+   }
+
+   // Set stroke weight to 10
+   ctx.lineWidth = 10;
+   // Set stroke color to black
+   ctx.strokeStyle = "#000000";
+
+   // If mouse is pressed, draw line between previous and current mouse positions
+   if (mouseDown === true) {
+     ctx.beginPath();
+     ctx.lineCap = "round";
+     ctx.moveTo(x, y);
+     ctx.lineTo(pX, pY);
+     ctx.stroke();
+   }
+
+   pX = x;
+   pY = y;
   }
 
-  // Set stroke weight to 10
-  ctx.lineWidth = 10;
-  // Set stroke color to black
-  ctx.strokeStyle = "#000000";
-  // If mouse is pressed, draw line between previous and current mouse positions
-  if (mouseDown === true) {
-    ctx.beginPath();
-    ctx.lineCap = "round";
-    ctx.moveTo(x, y);
-    ctx.lineTo(pX, pY);
-    ctx.stroke();
-  }
-
-  pX = x;
-  pY = y;
 }
 
 function onMouseDown(e) {
@@ -137,6 +143,32 @@ function onMouseUpdate(e) {
   const pos = getMousePos(canvas, e);
   x = pos.x;
   y = pos.y;
+}
+
+function onTouchStart(e){
+  mobileMode = true;
+}
+
+function onTouchEnd(e){
+  e.preventDefault();
+  lastPt = null;
+  mobileMode = false;
+  classifyCanvas();
+}
+
+function onTouchUpdate(e){
+  mobileMode = true;
+  e.preventDefault();
+  if(lastPt != null){
+   // Set stroke weight to 10
+   ctx.lineWidth = 10;
+   // Set stroke color to black
+   ctx.strokeStyle = "#000000";
+   ctx.beginPath();
+   ctx.moveTo(lastPt.x, lastPt.y);
+   ctx.lineTo(e.touches[0].pageX, e.touches[0].pageY);
+  }
+  lastPt = {x:e.touches[0].pageX, y:e.touches[0].pageY};
 }
 
 function getMousePos(canvas, e) {
