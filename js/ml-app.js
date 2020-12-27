@@ -152,9 +152,9 @@ function draw() {
     }
     else{
       ctx.moveTo(lastPt.x, lastPt.y);
+      ctx.lineTo(x, y);
+      ctx.stroke();
     }
-    ctx.lineTo(x, y);
-    ctx.stroke();
    }
    else{
     islastPtNullPrev = true;
