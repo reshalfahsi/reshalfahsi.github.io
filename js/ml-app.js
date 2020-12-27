@@ -136,6 +136,7 @@ function draw() {
     ctx.beginPath();
     ctx.moveTo(lastPt.x, lastPt.y);
     ctx.lineTo(x, y);
+    ctx.stroke();
    }
    lastPt = {x:x, y:y};
   }
@@ -171,9 +172,8 @@ function onTouchEnd(e){
 function onTouchUpdate(e){
   mobileMode = true;
   e.preventDefault();
-  const pos = getMousePos(canvas, e);
-  x = pos.x;
-  y = pos.y;
+  x = e.touches[0].pageX;
+  y = e.touches[0].pageY;
 }
 
 function getMousePos(canvas, e) {
