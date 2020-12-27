@@ -37,6 +37,10 @@ async function setup() {
   canvas.addEventListener("mousedown", onMouseDown);
   canvas.addEventListener("mouseup", onMouseUp);
 
+  canvas.addEventListener("touchmove", onMouseUpdate);
+  canvas.addEventListener("touchstart", onMouseDown);
+  canvas.addEventListener("touchend", onMouseUp);
+
   // Create a clear canvas button
   button = document.querySelector("#clearBtn");
 
