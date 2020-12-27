@@ -127,6 +127,18 @@ function draw() {
    pX = x;
    pY = y;
   }
+  else{
+   if(lastPt != null){
+    // Set stroke weight to 10
+    ctx.lineWidth = 10;
+    // Set stroke color to black
+    ctx.strokeStyle = "#000000";
+    ctx.beginPath();
+    ctx.moveTo(lastPt.x, lastPt.y);
+    ctx.lineTo(x, y);
+   }
+   lastPt = {x:x, y:y};
+  }
 
 }
 
@@ -159,16 +171,9 @@ function onTouchEnd(e){
 function onTouchUpdate(e){
   mobileMode = true;
   e.preventDefault();
-  if(lastPt != null){
-   // Set stroke weight to 10
-   ctx.lineWidth = 10;
-   // Set stroke color to black
-   ctx.strokeStyle = "#000000";
-   ctx.beginPath();
-   ctx.moveTo(lastPt.x, lastPt.y);
-   ctx.lineTo(e.touches[0].pageX, e.touches[0].pageY);
-  }
-  lastPt = {x:e.touches[0].pageX, y:e.touches[0].pageY};
+  const pos = getMousePos(canvas, e);
+  x = pos.x;
+  y = pos.y;
 }
 
 function getMousePos(canvas, e) {
