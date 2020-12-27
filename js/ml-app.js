@@ -182,6 +182,7 @@ function onMouseUpdate(e) {
 
 function onTouchStart(e){
   mobileMode = true;
+  lastPt = null;
 }
 
 function onTouchEnd(e){
