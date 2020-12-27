@@ -26,6 +26,7 @@ let y = null;
 let mouseDown = false;
 let mobileMode = false;
 let lastPt = null;
+let islastPtNullPrev = false;
 
 setup();
 async function setup() {
@@ -95,6 +96,7 @@ function clearCanvas() {
   ctx.fillStyle = "#ebedef";
   ctx.fillRect(0, 0, width, height);
   comment.textContent = `I'm 100% sure it is the blank space`;
+  lastPt = null;
 }
 
 function draw() {
@@ -144,10 +146,20 @@ function draw() {
     ctx.strokeStyle = "#000000";
     ctx.beginPath();
     // ctx.lineCap = "round";
-    ctx.moveTo(lastPt.x, lastPt.y);
+    if(islastPtNullPrev){
+      ctx.moveTo(x, y);
+      islastPtNullPrev = false;
+    }
+    else{
+      ctx.moveTo(lastPt.x, lastPt.y);
+    }
     ctx.lineTo(x, y);
     ctx.stroke();
    }
+   else{
+    islastPtNullPrev = true;
+   }
+
    lastPt = {x:x, y:y};
   }
 
