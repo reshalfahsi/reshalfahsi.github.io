@@ -193,7 +193,7 @@ function onTouchStart(e){
 }
 
 function onTouchEnd(e){
-  // e.preventDefault();
+  e.preventDefault();
   classifyCanvas();
   // lastPt = null;
   // x = null;
@@ -204,7 +204,7 @@ function onTouchEnd(e){
 
 function onTouchUpdate(e){
   mobileMode = true;
-  // e.preventDefault();
+  e.preventDefault();
   const rect = canvas.getBoundingClientRect();
   x = e.touches[0].pageX - rect.left;
   y = e.touches[0].pageY - rect.top;
