@@ -209,6 +209,14 @@ function gotResult(error, results) {
   // The results are in an array ordered by confidence.
   console.log(results);
 
-  comment.textContent = `I'm ${results[0].confidence.toFixed(4) * 100.0}% sure it is the ${results[0].label}!`;
+  let res = results[0].label.split("_");
+  let iter = 0;
+  let ret = "";
+  for(iter; iter < res.length; iter++){
+    ret += " " + res[iter];
+  }
+  var confidence = (results[0].confidence * 100).toFixed(3);
+
+  comment.textContent = `I'm ${confidence}% sure it is the${ret}!`;
 }
 
