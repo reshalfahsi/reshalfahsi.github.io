@@ -94,7 +94,7 @@ function onModelReady() {
 function clearCanvas() {
   ctx.fillStyle = "#ebedef";
   ctx.fillRect(0, 0, width, height);
-  comment.textContent = `I'm 100% sure it is the blank space`;
+  comment.textContent = `I'm 100% sure it is the blank space!`;
   lastPt = null;
   x = null;
   y = null;
