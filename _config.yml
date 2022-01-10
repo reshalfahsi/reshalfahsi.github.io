@@ -9,14 +9,14 @@ permalink:        pretty
 
 
 # Setup
-title:            Resha Al-Fahsi
+title:            Resha    Al-Fahsi
 tagline:          'Learn or Die'
 description:      'Computer Vision and Machine Learning Enthusiast'
 url:              https://reshalfahsi.github.io
 baseurl:          https://reshalfahsi.github.io/
 
 author:
-  name:           'Resha Al-Fahsi'
+  name:           'Resha    Al-Fahsi'
   url:            https://twitter.com/reshalfahsi
 
 paginate:         5

@@ -15,7 +15,7 @@ Fukurō is a wheeled soccer robot platform of UGM based on RoboCup Middle Size L
 ### Laboratory Attendance Dashboard Website Based on Face Recognition System
 
 
-<img src="{{site.baseurl}}public/facerecognition-thumbnail.gif" width=400 style="float:right margin-left=10cm">
+<img src="{{site.baseurl}}public/facerecognition-thumbnail.gif" width=500 style="float:right margin-left=10cm">
 
 
 This project is used as an attendance system in the laboratory which the CCTV installed for monitoring the laboratory 24/7. The face recognition system was built using Tiny Face Detector and Dlib framework. The dashboard design was built using Dash by Plotly. The face recognition system data is sent to dashboard using ZeroMQ. All of works are written in Python.
