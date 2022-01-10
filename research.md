@@ -32,4 +32,4 @@ NightOwl is a robotic platform that designed exclusively for wheeled service rob
 
 ### Publication ###
 
-For a list of my publications, please see [my google scholar](https://scholar.google.co.id/citations?user=ItPhnycAAAAJ&hl=id).
+For a list of my publications, please take a look at my [Google Scholar](https://scholar.google.co.id/citations?user=ItPhnycAAAAJ&hl=id).

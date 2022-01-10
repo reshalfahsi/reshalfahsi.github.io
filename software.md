@@ -23,4 +23,4 @@ This package is implementation of GGB color space from [Development of a Robust 
 
 ### Other Open Source Software ###
 
-For a list of my open source software, please see [Github](https://github.com/reshalfahsi).
+For a list of my open source software, please take a look at my [Github](https://github.com/reshalfahsi).
