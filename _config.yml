@@ -8,14 +8,14 @@ gems:
 permalink:        pretty
 
 # Setup
-title:            Resha Dwika Hefni Al-Fahsi
+title:            Resha Al-Fahsi
 tagline:          'Learn or Die'
 description:      'Computer Vision and Machine Learning Enthusiast'
 url:              https://reshalfahsi.github.io
 baseurl:          /
 
 author:
-  name:           'Resha Dwika Hefni Al-Fahsi'
+  name:           'Resha Al-Fahsi'
   url:            https://twitter.com/reshalfahsi
 
 paginate:         5
