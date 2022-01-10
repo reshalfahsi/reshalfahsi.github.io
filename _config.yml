@@ -1,0 +1,27 @@
+# Dependencies
+highlighter:   rouge   #pygments
+
+gems: 
+  - jekyll-paginate
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Resha Dwika Hefni Al-Fahsi
+tagline:          'Learn or Die'
+description:      'Computer Vision and Machine Learning Enthusiast'
+url:              https://reshalfahsi.github.io
+baseurl:          /
+
+author:
+  name:           'Resha Dwika Hefni Al-Fahsi'
+  url:            https://twitter.com/reshalfahsi
+
+paginate:         5
+
+# Custom vars
+version:          1.1.0
+
+github:
+  repo:           https://github.com/reshalfahsi/reshalfahsi.github.io
