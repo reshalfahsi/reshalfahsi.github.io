@@ -4,6 +4,15 @@ title: Software
 ---
 
 
+### COVID19CT3D
+
+
+<img src="{{site.baseurl}}public/thorax.gif" width=400 style="float:right margin-left=10cm">
+
+
+This tutorial will teach you how to train a Deep Learning model based on 3D Convolution. This model will classify whether the volumetric medical image from a 3D CT scan of the thorax is infected by COVID-19 or not. The model's output is a single-valued tensor that represents the probability of being infected by COVID-19. This tutorial is based on [A tutorial notebook on 3D image classification](https://github.com/hasibzunair/3D-image-classification-tutorial).
+
+
 ### GGB
 
 
