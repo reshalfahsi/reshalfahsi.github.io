@@ -4,6 +4,17 @@ title: Software
 ---
 
 
+### Your Kind Friend Bot: Unreliable Chatbot
+
+<div align="center">
+
+<img src="{{site.baseurl}}public/ykfbot.gif" width="400">
+
+</div>
+
+Your typical kind friend who talk nonsense just to kill time. Visit [here](https://t.me/yourkindfriendbot). This project's source code is hosted on [Github](https://github.com/reshalfahsi/ykfbot).
+
+
 ### PyTorch Depthwise Separable Convolution
 
 <div align="center">
@@ -15,17 +26,6 @@ title: Software
 PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, and ``SeparableConv3d``. This package's source code is hosted on [Github](https://github.com/reshalfahsi/separableconv-torch).
 
 
-### SotoDemoBot
-
-<div align="center">
-
-<img src="{{site.baseurl}}public/sotodemobot.gif" width="400">
-
-</div>
-
-Simple Object detection Telegram bOt DEMO: predict the objects in the given image. Use ``/predict <URL>`` to predict the objects in the image of given url. This project's source code is hosted on [Github](https://github.com/reshalfahsi/object-detection-bot).
-
-
 ### COVID19CT3D
 
 <div align="center">
@@ -35,6 +35,17 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 </div>
 
 This tutorial will teach you how to train a Deep Learning model based on 3D Convolution. This model will classify whether the volumetric medical image from a 3D CT scan of the thorax is infected by COVID-19 or not. The model's output is a single-valued tensor that represents the probability of being infected by COVID-19. This tutorial is based on [A tutorial notebook on 3D image classification](https://github.com/hasibzunair/3D-image-classification-tutorial). This project's source code is hosted on [Github](https://github.com/reshalfahsi/covid19ct3d).
+
+
+### SotoDemoBot
+
+<div align="center">
+
+<img src="{{site.baseurl}}public/sotodemobot.gif" width="400">
+
+</div>
+
+Simple Object detection Telegram bOt DEMO: predict the objects in the given image. Use ``/predict <URL>`` to predict the objects in the image of given url. This project's source code is hosted on [Github](https://github.com/reshalfahsi/object-detection-bot).
 
 
 ### GGB
