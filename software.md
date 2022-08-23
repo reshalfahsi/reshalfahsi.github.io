@@ -4,6 +4,18 @@ title: Software
 ---
 
 
+## Neural Network
+
+<div align="center">
+
+<img src="https://4.bp.blogspot.com/-Anllqq6pDXw/VRUSesbvyAI/AAAAAAAAsrc/CIHz6vLsuTU/s800/computer_jinkou_chinou.png" width="400">
+
+</div>
+
+A naive implementation of neural network. The code structure is heavily inspired by [PyTorch](https://github.com/pytorch/pytorch) and [TensorFlow](https://github.com/tensorflow/tensorflow). However, this package is used for educational purposes and is not intended to be adopted in production. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neuralnetwork).
+
+
+
 ### Your Kind Friend Bot: Unreliable Chatbot
 
 <div align="center">
