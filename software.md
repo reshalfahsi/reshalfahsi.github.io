@@ -8,7 +8,7 @@ title: Software
 
 <div align="center">
 
-<img src="https://4.bp.blogspot.com/-Anllqq6pDXw/VRUSesbvyAI/AAAAAAAAsrc/CIHz6vLsuTU/s800/computer_jinkou_chinou.png" width="400">
+<img src="https://4.bp.blogspot.com/-Anllqq6pDXw/VRUSesbvyAI/AAAAAAAAsrc/CIHz6vLsuTU/s800/computer_jinkou_chinou.png" width="300">
 
 </div>
 
@@ -42,7 +42,7 @@ PyTorch (unofficial) implementation of Depthwise Separable Convolution. This typ
 
 <div align="center">
 
-<img src="{{site.baseurl}}public/thorax.gif" width=400 style="float:right margin-left=10cm">
+<img src="{{site.baseurl}}public/thorax.gif" width=300 style="float:right margin-left=10cm">
 
 </div>
 
