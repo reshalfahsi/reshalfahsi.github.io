@@ -24,7 +24,7 @@ A naive implementation of neural network. The code structure is heavily inspired
 
 </div>
 
-Your typical kind friend who talk nonsense just to kill time. Visit [here](https://t.me/yourkindfriendbot). This project's source code is hosted on [Github](https://github.com/reshalfahsi/ykfbot).
+Your typical kind friend who talk nonsense just to kill time. It can respond to text or image. Visit [here](https://t.me/yourkindfriendbot). This project's source code is hosted on [Github](https://github.com/reshalfahsi/ykfbot).
 
 
 ### PyTorch Depthwise Separable Convolution
@@ -35,7 +35,7 @@ Your typical kind friend who talk nonsense just to kill time. Visit [here](https
 
 </div>
 
-PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, and ``SeparableConv3d``. This package's source code is hosted on [Github](https://github.com/reshalfahsi/separableconv-torch).
+PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, ``SeparableConv3d``, ``LazySeparableConv1d``, ``LazySeparableConv2d``, and ``LazySeparableConv3d``. This package's source code is hosted on [Github](https://github.com/reshalfahsi/separableconv-torch).
 
 
 ### COVID19CT3D
