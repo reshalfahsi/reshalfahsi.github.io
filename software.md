@@ -8,7 +8,7 @@ title: Software
 
 <div align="center">
 
-<img src="{{site.baseurl}}public/ykfbot.gif" width="400">
+<img src="{{site.baseurl}}public/image-captioning.gif" width="400">
 
 </div>
 
