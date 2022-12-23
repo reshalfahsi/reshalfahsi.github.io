@@ -4,7 +4,20 @@ title: Software
 ---
 
 
-## Image Captioning API
+### Stable Diffusion Dreaming
+
+<div align="center">
+    <a href="https://youtu.be/OBymeX0mtCE">
+        <img src="https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook/blob/main/assets/stablediffusion.gif" width="400" />
+    </a>
+
+Stable diffusion dreams of "Alien invasion of Mars colonization in the future".
+</div>
+
+Generate video by stable diffusion in Colab Notebook. This project's source code is hosted on [Github](https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook).
+
+
+### Image Captioning API
 
 <div align="center">
 
@@ -15,7 +28,7 @@ title: Software
 Minimal implementation of image captioning API hosted on [Heroku](https://image-captioning-69420.herokuapp.com/). It receives an image and responds with a caption regarding the image. This project's source code is hosted on [Github](https://github.com/reshalfahsi/image-captioning-api).
 
 
-## Neural Network
+### Neural Network
 
 <div align="center">
 
@@ -90,6 +103,17 @@ This package is implementation of GGB color space from [Development of a Robust 
 </div>
 
 MyQLaNet is a Deep Learning platform for macula detection. It provides end to end system for macula detection with graphical user interface. MyQLaNet's source code is hosted on [Github](https://github.com/reshalfahsi/myqlanet).
+
+
+### Suction Arm Manipulator Robot
+
+<div align="center">
+    <a href="https://youtu.be/cmVsOR96NVk">
+        <img src="https://github.com/reshalfahsi/arm-suction-sim/blob/master/img/simulation.gif" width=400/>
+    </a>
+</div>
+
+Simulate the Suction Arm Manipulator Robot to pickup daily objects inspired by Amazon Robotics Challenge. This project's source code is hosted on [Github](https://github.com/reshalfahsi/arm-suction-sim).
 
 
 ### Other Open Source Software ###
