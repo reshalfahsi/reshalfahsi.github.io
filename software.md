@@ -8,7 +8,7 @@ title: Software
 
 <div align="center">
     <a href="https://youtu.be/OBymeX0mtCE">
-        <img src="https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook/blob/main/assets/stablediffusion.gif" width="400" />
+        <img src="https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook/blob/main/assets/stablediffusion.gif?raw=true" width=400 />
     </a>
 
 Stable diffusion dreams of "Alien invasion of Mars colonization in the future".
@@ -109,7 +109,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <div align="center">
     <a href="https://youtu.be/cmVsOR96NVk">
-        <img src="https://github.com/reshalfahsi/arm-suction-sim/blob/master/img/simulation.gif" width=400/>
+        <img src="https://github.com/reshalfahsi/arm-suction-sim/blob/master/img/simulation.gif?raw=true" width=400 />
     </a>
 </div>
 
