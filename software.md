@@ -4,6 +4,20 @@ title: Software
 ---
 
 
+
+### AI Cover Song
+
+<div align="center">
+    <a href="https://youtu.be/wU6WnPl54HI">
+        <img src="https://img.youtube.com/vi/wU6WnPl54HI/hqdefault.jpg" alt="Itsuki Nakano - Asmalibrasi (AI Cover)" width=400 />
+    </a>
+
+Itsuki Nakano - Asmalibrasi (AI Cover).
+</div>
+
+Cover your favorite song by your favorite singer. This project's source code is hosted on [Github](https://github.com/reshalfahsi/AI-Cover-Song).
+
+
 ### Stable Diffusion Dreaming
 
 <div align="center">
