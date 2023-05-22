@@ -9,7 +9,7 @@ title: Software
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/music-genre-classification/master/classification.png" width="450">
+<img src="https://raw.githubusercontent.com/reshalfahsi/music-genre-classification/master/classification.png" width="600">
 
 </div>
 
