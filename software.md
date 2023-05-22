@@ -4,6 +4,19 @@ title: Software
 ---
 
 
+
+### Music Genre Classification
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/music-genre-classification/master/classification.png" width="300">
+
+</div>
+
+Classify input audio into a particular genre of music. First, the audio is preprocessed via [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum). Next, using MLP, we obtain the probability distribution of 10 classes of music genres. Before applying MLP to the MFCC, It has to be averaged and subjected to [CMVN](https://en.wikipedia.org/wiki/Cepstral_mean_and_variance_normalization). This project's source code is hosted on [Github](https://github.com/reshalfahsi/music-genre-classification).
+
+
+
 ### AI Cover Song
 
 <div align="center">
