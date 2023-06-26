@@ -5,6 +5,33 @@ title: Software
 
 
 
+### EEG Motor Imagery Classification Using CNN, Transformer, and MLP
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/eeg-motor-imagery-classification/master/assets/cnn-transformer-mlp-white.png" width="600">
+
+An illustration of the CNN-Transformer-MLP model.
+</div>
+
+The electroencephalogram, or EEG for short, is one of the biosignals that display brain activity in the form of time-series data. EEG can be used to help amputees or paralyzed people move their prosthetic arms via a brain-computer interface (BCI). In order to identify the correct limbs to control from the EEG signal, a combination of CNN, Transformer, and MLP is utilized in this work for motor imagery (MI) classification. CNN converts the epoched EEG signal into meaningful representation in accordance with the signal's non-stationary nature. Transformer finds the global relationship of the given representation from CNN. MLP classifies the expected upper limbs to move based on the extracted information from the Transformer. To gauge the capability of the CNN-Transformer-MLP model, PhysioNet's EEG Motor Movement/Imagery Dataset is used. The model attains an accuracy of ``76.4%`` in the test set.. This project's source code is hosted on [Github](https://github.com/reshalfahsi/eeg-motor-imagery-classification).
+
+
+
+### Movie Review Sentiment Analysis Using CNN and MLP
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/movie-review-sentiment-analysis/master/assets/neg_CNN0.png" width="600">
+
+Visualization of the first layer of CNN on the negative review.
+</div>
+
+Audiences' reactions to the movie they have watched can be presented in a text format called reviews. These reviews can be polarized into two clusters: positive responses and negative responses. Using CNN and MLP, one can perform sentiment analysis on movie reviews to automatically recognize the viewer's tendency toward a particular movie. CNN is used for extracting the latent information within the text format. MLP leverages the extracted information and carries out the classification task. The CNN-MLP model is evaluated with Standford's IMBD Movie Review dataset. In the test set, the model achieves ``85.6% accuracy``. This project's source code is hosted on [Github](https://github.com/reshalfahsi/movie-review-sentiment-analysis).
+
+
+
+
 ### Music Genre Classification
 
 <div align="center">
