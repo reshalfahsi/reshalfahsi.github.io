@@ -27,7 +27,7 @@ The electroencephalogram, or EEG for short, is one of the biosignals that displa
 Visualization of the first layer of CNN on the negative review.
 </div>
 
-Audiences' reactions to the movie they have watched can be presented in a text format called reviews. These reviews can be polarized into two clusters: positive responses and negative responses. Using CNN and MLP, one can perform sentiment analysis on movie reviews to automatically recognize the viewer's tendency toward a particular movie. CNN is used for extracting the latent information within the text format. MLP leverages the extracted information and carries out the classification task. The CNN-MLP model is evaluated with Standford's IMBD Movie Review dataset. In the test set, the model achieves ``85.6% accuracy``. This project's source code is hosted on [Github](https://github.com/reshalfahsi/movie-review-sentiment-analysis).
+Audiences' reactions to the movie they have watched can be presented in a text format called reviews. These reviews can be polarized into two clusters: positive responses and negative responses. Using CNN and MLP, one can perform sentiment analysis on movie reviews to automatically recognize the viewer's tendency toward a particular movie. CNN is used for extracting the latent information within the text format. MLP leverages the extracted information and carries out the classification task. The CNN-MLP model is evaluated with Standford's IMBD Movie Review dataset. In the test set, the model achieves ``85.6%`` accuracy. This project's source code is hosted on [Github](https://github.com/reshalfahsi/movie-review-sentiment-analysis).
 
 
 
