@@ -61,7 +61,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/result01.png" width="600">
+<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/result01.png" width="400">
 
 Qualitative result of the object detection model.
 </div>
