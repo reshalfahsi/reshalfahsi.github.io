@@ -66,7 +66,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 Qualitative result of the object detection model.
 </div>
 
-Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model.
+Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model. This project's source code is hosted on [Github](https://github.com/reshalfahsi/anchor-free-object-detection).
 
 
 
