@@ -57,6 +57,19 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ## Computer Vision ##
 
 
+### Anchor-Free Object Detection
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/result01.png" width="600">
+
+Qualitative result of the object detection model.
+</div>
+
+Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model.
+
+
+
 ### Stable Diffusion Dreaming
 
 <div align="center">
@@ -127,16 +140,6 @@ Your typical kind friend who talk nonsense just to kill time. It can respond to 
 
 ## Audio Data ##
 
-### Music Genre Classification
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/reshalfahsi/music-genre-classification/master/classification.png" width="600">
-
-</div>
-
-Classify input audio into a particular genre of music. First, the audio is preprocessed via [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum). Next, using MLP, we obtain the probability distribution of 10 classes of music genres. Before applying MLP to the MFCC, the cepstral coefficients with the length of the number of sequence of time has to be averaged and subjected to [CMVN](https://en.wikipedia.org/wiki/Cepstral_mean_and_variance_normalization). This project's source code is hosted on [Github](https://github.com/reshalfahsi/music-genre-classification).
-
 
 ### AI Cover Song
 
@@ -151,21 +154,21 @@ Itsuki Nakano - Asmalibrasi (AI Cover).
 Cover your favorite song by your favorite singer. This project's source code is hosted on [Github](https://github.com/reshalfahsi/AI-Cover-Song).
 
 
+### Music Genre Classification
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/music-genre-classification/master/classification.png" width="600">
+
+</div>
+
+Classify input audio into a particular genre of music. First, the audio is preprocessed via [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum). Next, using MLP, we obtain the probability distribution of 10 classes of music genres. Before applying MLP to the MFCC, the cepstral coefficients with the length of the number of sequence of time has to be averaged and subjected to [CMVN](https://en.wikipedia.org/wiki/Cepstral_mean_and_variance_normalization). This project's source code is hosted on [Github](https://github.com/reshalfahsi/music-genre-classification).
+
+
 -----
 
 
 ## Deep Learning ##
-
-
-### Neural Network
-
-<div align="center">
-
-<img src="https://4.bp.blogspot.com/-Anllqq6pDXw/VRUSesbvyAI/AAAAAAAAsrc/CIHz6vLsuTU/s800/computer_jinkou_chinou.png" width="300">
-
-</div>
-
-A naive implementation of neural network. The code structure is heavily inspired by [PyTorch](https://github.com/pytorch/pytorch) and [TensorFlow](https://github.com/tensorflow/tensorflow). However, this package is used for educational purposes and is not intended to be adopted in production. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neuralnetwork).
 
 
 ### PyTorch Depthwise Separable Convolution
@@ -178,6 +181,17 @@ A naive implementation of neural network. The code structure is heavily inspired
 
 PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, ``SeparableConv3d``, ``LazySeparableConv1d``, ``LazySeparableConv2d``, and ``LazySeparableConv3d``. This package's source code is hosted on [Github](https://github.com/reshalfahsi/separableconv-torch).
 
+
+
+### Neural Network
+
+<div align="center">
+
+<img src="https://4.bp.blogspot.com/-Anllqq6pDXw/VRUSesbvyAI/AAAAAAAAsrc/CIHz6vLsuTU/s800/computer_jinkou_chinou.png" width="300">
+
+</div>
+
+A naive implementation of neural network. The code structure is heavily inspired by [PyTorch](https://github.com/pytorch/pytorch) and [TensorFlow](https://github.com/tensorflow/tensorflow). However, this package is used for educational purposes and is not intended to be adopted in production. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neuralnetwork).
 
 
 -----
