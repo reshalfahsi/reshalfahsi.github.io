@@ -6,6 +6,21 @@ title: Software
 
 ## Biomedical Engineering and Life Sciences ##
 
+
+### Self-Supervised Contrastive Learning for Colon Pathology Classification ###
+
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/contrastive-ssl-pathology/master/assets/fine-tuned_qualitative.png" width="600">
+
+The qualitative result of the fine-tuned pre-trained SSL model.
+</div>
+
+
+Self-supervised learning, or SSL, has become a modern way to learn the hidden representation of data points. A dataset is not always provided with a label that marks a data point's category or value. SSL mitigates this issue by projecting a data point into an embedding vector representing information beneath. SSL can be trained contrastively, i.e., to measure the similarity between two projected embeddings (original and augmented) using certain metrics, e.g., cosine similarity, Euclidean distance, Manhattan distance, etc. By learning the latent representation, the SSL model can be utilized as a pre-trained model and fine-tuned as needed. The SSL model is divided into three parts: the backbone feature extractor, the embedding projection head, and the classification head. The backbone feature extractor leverages ResNet 18. The embedding head gives the embedding vector. The classification head concludes the classification task's result. Here, two other models are also introduced: the baseline model and the fine-tuned pre-trained SSL model. Both of them consist of a backbone feature extractor and a classification head. Yet, the latter makes use of the trained SSL model's backbone as its own backbone. To evaluate the performance of the models, the PathMNIST of the MedMNIST dataset is utilized. On batched training, the other pairs in the batch relative to a certain pair are treated as negative pairs. This notion is useful for the computation of the contrastive loss: NTXentLoss/InfoNCE. This project's source code is hosted on [Github](https://github.com/reshalfahsi/contrastive-ssl-pathology).
+
+
 ### EEG Motor Imagery Classification Using CNN, Transformer, and MLP
 
 <div align="center">
