@@ -72,6 +72,20 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ## Computer Vision ##
 
 
+### Zero-Reference Low-Light Image Enhanchement ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhanchement/master/assets/enhanchement_qualitative_00.png" width="400">
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhanchement/master/assets/enhanchement_qualitative_01.png" width="400">
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhanchement/master/assets/enhanchement_qualitative_02.png" width="400">
+
+The qualitative results of the image enhanchement method (comparing the original, the ground-truth, the PIL autocontrast, and the prediction).
+</div>
+
+Low-light image enhancement aims to raise the caliber of pictures taken in dim lighting, resulting in a brighter, clearer, and more visually appealing image without adding too much noise or distortion. One of the state-of-the-art methods for this computer vision task is Zero-DCE. This method uses just a low-light image without any image reference to learn how to produce an image with higher brightness. There are four loss functions crafted specifically for this zero-reference low-light image enhancement method, i.e., color constancy loss, exposure loss, illumination smoothness loss, and spatial consistency loss. This project's source code is hosted on [Github](https://github.com/reshalfahsi/zero-reference-low-light-image-enhanchement).
+
+
 ### Anchor-Free Object Detection
 
 <div align="center">
