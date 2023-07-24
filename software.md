@@ -7,6 +7,20 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### Small Molecular Generation for Drug Discovery ###
+
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/molecular-generation-drug-discovery/master/assets/qualitative_result.png" width="600">
+
+The qualitative results of the generated molecules. The chemical structure, the SMILES representation, and the QED scores are provided.
+</div>
+
+
+With the advent of deep learning, [drug development](https://en.wikipedia.org/wiki/Drug_development) can be sped up just by learning the patterns within the molecules regarding their chemical properties and composition. The pursuit of good candidates for drugs can be achieved using the generative model which can extrapolate the unseen molecular structure. In this project, one of the most popular generative models, ``Generative Adversarial Network`` or ``GAN``, is utilized. The generator of GAN consists of MLP, and the discriminator of GAN consists of R-GCN + MLP. Nowadays, there are plenty of open-sourced datasets that can be used for this purpose such as the ``QM9 (Quantum Machines 9) dataset``. The GAN model is trained on QM9 dataset and its performances are assessed by means of [molecular metrics](https://github.com/nicola-decao/MolGAN/blob/master/utils/molecular_metrics.py), i.e., quantitative estimate of druglikeness (QED), solubility (defined as the log octanol-water partition coefficient or logP), synthetizability, natural product, drug candidate, valid, unique, novel, and diversity. This project's source code is hosted on [Github](https://github.com/reshalfahsi/molecular-generation-drug-discovery).
+
+
 ### Self-Supervised Contrastive Learning for Colon Pathology Classification ###
 
 
