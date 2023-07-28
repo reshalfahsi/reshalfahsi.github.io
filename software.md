@@ -211,7 +211,24 @@ Classify input audio into a particular genre of music. First, the audio is prepr
 -----
 
 
-## Deep Learning ##
+## Graph Data ##
+
+### Graph Neural Network for Node Classification ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/node-classification/master/assets/qualitative_result.gif" width="600">
+
+The visualization of the embedding space of the nodes in the large graph in the course of training process.
+</div>
+
+A graph neural network (GNN) is a type of neural network leveraged to handle graph data. One kind of graph data is a single graph that is large enough to contain a myriad of nodes. Later, we can attribute each node to well-qualified features and discriminate them accordingly. Then, by means of GNN, we can perform node classification on this large graph. The CORA dataset, the publicly available dataset for node classification on a large graph, is used in this tutorial. The graph feature extractor utilized in this tutorial consists of a sequence of ``ResGatedGraphConv``, ``SAGEConv``, and ``TransformerConv``, which are implemented by [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/index.html). The final classifier comprises MLP. This project's source code is hosted on [Github](https://github.com/reshalfahsi/node-classification).
+
+
+-----
+
+
+## Machine Learning ##
 
 
 ### PyTorch Depthwise Separable Convolution
