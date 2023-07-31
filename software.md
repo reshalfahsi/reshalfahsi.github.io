@@ -90,9 +90,9 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_00.png" width="400">
-<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_01.png" width="400">
-<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_02.png" width="400">
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_00.png" width="600">
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_01.png" width="600">
+<img src="https://raw.githubusercontent.com/reshalfahsi/zero-reference-low-light-image-enhancement/master/assets/enhancement_qualitative_02.png" width="600">
 
 The qualitative results of the image enhancement method (comparing the original, the ground-truth, the PIL autocontrast, and the prediction).
 </div>
