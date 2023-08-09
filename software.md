@@ -90,9 +90,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/image-super-resolution/master/assets/hires_qualitative_00.png" width="400">
-<img src="https://raw.githubusercontent.com/reshalfahsi/image-super-resolution/master/assets/bicubic_qualitative_00.png" width="400">
-<img src="https://raw.githubusercontent.com/reshalfahsi/image-super-resolution/master/assets/esrgan_qualitative_00.png" width="400">
+<img src="https://raw.githubusercontent.com/reshalfahsi/image-super-resolution/master/assets/qualitative_result.png" width="600">
 
 Qualitative comparison between the reference high-resolution images (top), high-resolution images via bicubic interpolation (middle), and predicted high-resolution images through ESRGAN (bottom).
 </div>
