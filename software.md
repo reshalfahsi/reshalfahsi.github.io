@@ -227,7 +227,12 @@ Classify input audio into a particular genre of music. First, the audio is prepr
 
 ### Web Traffic Prediction via Temporal Graph Neural Network ###
 
+<div align="center">
+
 <img src="https://raw.githubusercontent.com/reshalfahsi/web-traffic-prediction/master/assets/qualitative_result.png" width="600">
+
+The visitor prediction at one of the vital mathematics articles on Wikipedia.
+</div>
 
 Temporal Graph Neural Network or Temporal GNN is one of the variant of the GNN which handles the spatio-temporal data. The term "spatio-" refers to the nature of the graph that is closely related to the spatial relationship that exists in the image data (recall that an image is basically a graph), and the term "temporal" here indicates the data may be progressively changing in a sequence of time. In this project, the [Chebysev GCNN+LSTM](https://arxiv.org/pdf/1612.07659.pdf) module and the Wiki Maths dataset are leveraged, which are provided by [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal). The complete Temporal GNN model contains the Chebysev GCNN+LSTM module, followed by MLP. Here, the model is trained to predict the daily user visits to Wikipedia's vital mathematics articles (represented by nodes/vertices). The graph's characteristic in the dataset is non-heterogenous and static. The details of the dataset can be seen [here](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/dataset.html#torch_geometric_temporal.dataset.wikimath.WikiMathsDatasetLoader). This project's source code is hosted on [Github](https://github.com/reshalfahsi/web-traffic-prediction).
 
