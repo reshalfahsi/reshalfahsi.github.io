@@ -172,7 +172,7 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/neural-machine-translation/master/assets/qualitative_result.png" width="600">
+<img src="https://raw.githubusercontent.com/reshalfahsi/neural-machine-translation/master/assets/qualitative_result.png" width="800">
 
 The attention maps from each of the Transformer's heads. Almost every corresponding word pair (English-German) at each head pays attention mutually.
 </div>
