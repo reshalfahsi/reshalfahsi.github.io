@@ -167,6 +167,19 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 ## Natural Language Processing ##
 
 
+### English-To-German Neural Machine Translation Using Transformer ###
+
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/neural-machine-translation/master/assets/qualitative_result.png" width="600">
+
+The attention maps from each of the Transformer's heads. Almost every corresponding word pair (English-German) at each head pays attention mutually.
+</div>
+
+Neural Machine Translation (NMT) is a family model or an approach to solving machine translation problems through an artificial neural network, typically deep learning. In other words, the model is dispatched to translate a sequence of words from the source language to the target language. In this case, the source language would be English and the target would be German. To fabricate the model, the Transformer layers are leveraged. The NMT model is trained on the Multi30K dataset. The model is then assessed on a subset of the dataset, which is the Flickr 2016 test dataset. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neural-machine-translation).
+
+
 ### Movie Review Sentiment Analysis Using CNN and MLP
 
 <div align="center">
