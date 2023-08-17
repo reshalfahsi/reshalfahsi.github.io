@@ -116,7 +116,7 @@ Low-light image enhancement aims to raise the quality of pictures taken in dim l
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/qualitative_result.png" width="600">
+<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/qualitative_result.png" width="1000">
 
 A car (left), a horse (middle), a person and a motorbike (right) are detected.
 </div>
