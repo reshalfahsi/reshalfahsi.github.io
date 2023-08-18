@@ -116,7 +116,7 @@ Low-light image enhancement aims to raise the quality of pictures taken in dim l
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/qualitative_result.png" width="1000">
+<img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/qualitative_result.png" width="1200">
 
 A car (left), a horse (middle), a person and a motorbike (right) are detected.
 </div>
@@ -172,7 +172,7 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/reshalfahsi/neural-machine-translation/master/assets/qualitative_result.png" width="800">
+<img src="https://raw.githubusercontent.com/reshalfahsi/neural-machine-translation/master/assets/qualitative_result.png" width="1000">
 
 The attention maps from each of the Transformer's heads. Almost every corresponding word pair (English-German) at each head pays attention mutually.
 </div>
