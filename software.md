@@ -13,7 +13,7 @@ title: Software
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/medical-image-generation/master/assets/qualitative_result.png" width="600">
 
-Generated samples on the BloodMNIST dataset (left) and a montage of the actual BloodMNIST dataset (right)
+Unconditional progressive generation on the BloodMNIST dataset (left) and a montage of the actual BloodMNIST dataset (right)
 </div>
 
 Image synthesis on medical images can aid in generating more data for biomedical problems, which is hindered due to some legal and technical issues. Using the diffusion model, this problem can be solved. The diffusion model works by progressively adding noise, typically Gaussian, to an image until it is entirely undistinguishable from randomly generated pixels. Then, the noisy image is restored to its original appearance gradually. The forward process (noise addition) is guided by a noise scheduler, and the backward process (image restoration) is carried out by a U-Net model. In this project, the diffusion model is trained on the BloodMNIST dataset from the MedMNIST dataset. This project's source code is hosted on [Github](https://github.com/reshalfahsi/medical-image-generation).
