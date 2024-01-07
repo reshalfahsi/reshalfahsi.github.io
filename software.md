@@ -7,13 +7,25 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### Medical Image Latent Space Visualization Using VQ-VAE ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/medical-image-latent-space-visualization/master/assets/latent_space.png" width="600">
+
+The latent space of five distinct datasets, i.e., DermaMNSIT, PneumoniaMNIST, RetinaMNIST, BreastMNIST, and BloodMNIST.
+</div>
+
+In this project, VQ-VAE (Vector Quantized VAE) is leveraged to learn the latent representation _z_ of various medical image datasets _x_ from MedMNIST. Similar to VAE (Variational Autoencoder), VQ-VAE consists of an encoder _q_(_z_|_x_) and a decoder _p_(_x_|_z_). But unlike VAE, which generally uses the Gaussian reparameterization trick, VQ-VAE utilizes vector quantization to sample the latent representation _z_ ~ _q_(_z_|_x_). Using vector quantization, it allows VQ-VAE to set a generated latent variable from the encoder to a learned embedding from a codebook __C__ ∈ R<sup>_E_ × _D_</sup>, where E is the number of embeddings and _D_ is the number of latent variable dimensions (or channels in the context of image data). Let __X__ ∈ R<sup>_H_ × _W_ × _D_</sup> be the output feature map of the encoder, where _H_ is the height and _W_ is the width. To transform the raw latent variable to the discretized one, first we need to find the Euclidean distance between __X__ and __C__. This step is essential to determine the closest representation of the raw latent variable to the embedding. The computation of this step is roughly expressed as: (__X__)<sup>2</sup> + (__C__)<sup>2</sup> - 2 × (__X__ × __C__). This calculation yields __Y__ ∈ R<sup>_H_ × _W_</sup>, where each element denotes the index of the nearest embedding of the corresponding latent variable. Then, __Y__ is subject to __C__ to get the final discrete representation. Inspired by centroid update of K-means clustering, EMA (exponential moving average) is applied during training, which updates in online fashion involving embeddings in the codebook and the estimated number of members in a cluster. This project's source code is hosted on [Github](https://github.com/reshalfahsi/medical-image-latent-space-visualization).
+
+
 ### Medical Image Generation Using Diffusion Model ###
 
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/medical-image-generation/master/assets/qualitative_result.png" width="600">
 
-Unconditional progressive generation on the BloodMNIST dataset (left) and a montage of the actual BloodMNIST dataset (right)
+Unconditional progressive generation on the BloodMNIST dataset (left) and a montage of the actual BloodMNIST dataset (right).
 </div>
 
 Image synthesis on medical images can aid in generating more data for biomedical problems, which is hindered due to some legal and technical issues. Using the diffusion model, this problem can be solved. The diffusion model works by progressively adding noise, typically Gaussian, to an image until it is entirely undistinguishable from randomly generated pixels. Then, the noisy image is restored to its original appearance gradually. The forward process (noise addition) is guided by a noise scheduler, and the backward process (image restoration) is carried out by a U-Net model. In this project, the diffusion model is trained on the BloodMNIST dataset from the MedMNIST dataset. This project's source code is hosted on [Github](https://github.com/reshalfahsi/medical-image-generation).
