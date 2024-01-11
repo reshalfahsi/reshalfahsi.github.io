@@ -16,7 +16,7 @@ title: Software
 The latent space of five distinct datasets, i.e., DermaMNSIT, PneumoniaMNIST, RetinaMNIST, BreastMNIST, and BloodMNIST.
 </div>
 
-In this project, VQ-VAE (Vector Quantized VAE) is leveraged to learn the latent representation _z_ of various medical image datasets _x_ from MedMNIST. Similar to VAE (Variational Autoencoder), VQ-VAE consists of an encoder _q_(_z_<code>&#124;</code>_x_) and a decoder _p_(_x_<code>&#124;</code>_z_). But unlike VAE, which generally uses the Gaussian reparameterization trick, VQ-VAE utilizes vector quantization to sample the latent representation _z_ ~ _q_(_z_<code>&#124;</code>_x_). Using vector quantization, it allows VQ-VAE to replace a generated latent variable from the encoder with a learned embedding from a codebook __C__ ∈ R<sup>_E_ × _D_</sup>, where E is the number of embeddings and _D_ is the number of latent variable dimensions (or channels in the context of image data). Let __X__ ∈ R<sup>_H_ × _W_ × _D_</sup> be the output feature map of the encoder, where _H_ is the height and _W_ is the width. To transform the raw latent variable to the discretized one, first we need to find the Euclidean distance between __X__ and __C__. This step is essential to determine the closest representation of the raw latent variable to the embedding. The computation of this step is roughly expressed as: (__X__)<sup>2</sup> + (__C__)<sup>2</sup> - 2 × (__X__ × __C__). This calculation yields __Z__ ∈ R<sup>_H_ × _W_</sup>, where each element denotes the index of the nearest embedding of the corresponding latent variable. Then, __Z__ is subject to __C__ to get the final discrete representation. Inspired by the centroid update of K-means clustering, EMA (exponential moving average) is applied during training, which updates in an online fashion involving embeddings in the codebook and the estimated number of members in a cluster. This project's source code is hosted on [Github](https://github.com/reshalfahsi/medical-image-latent-space-visualization).
+In this project, VQ-VAE (Vector Quantized VAE) is leveraged to learn the latent representation _z_ of various medical image datasets _x_ from MedMNIST. Similar to VAE (Variational Autoencoder), VQ-VAE consists of an encoder _q_(_z_<code>&#124;</code>_x_) and a decoder _p_(_x_<code>&#124;</code>_z_). But unlike VAE, which generally uses the Gaussian reparameterization trick, VQ-VAE utilizes vector quantization to sample the latent representation _z_ ~ _q_(_z_<code>&#124;</code>_x_). Using vector quantization, it allows VQ-VAE to replace a generated latent variable from the encoder with a learned embedding from a codebook __C__ ∈ R<sup>_E_ × _D_</sup>, where E is the number of embeddings and _D_ is the number of latent variable dimensions (or channels in the context of image data). Let __X__ ∈ R<sup>_H_ × _W_ × _D_</sup> be the output feature map of the encoder, where _H_ is the height and _W_ is the width. To transform the raw latent variable to the discretized one, first we need to find the Euclidean distance between __X__ and __C__. This step is essential to determine the closest representation of the raw latent variable to the embedding. The computation of this step is roughly expressed as: (__X__)<sup>2</sup> + (__C__)<sup>2</sup> - 2 × (__X__ × __C__). This calculation yields __Z__ ∈ R<sup>_H_ × _W_</sup>, where each element denotes the index of the nearest embedding of the corresponding latent variable. Then, __Z__ is subject to __C__ to get the final discrete representation. Inspired by the centroid update of K-means clustering, EMA (exponential moving average) is applied during training, which updates in an online fashion involving embeddings in the codebook and the estimated number of members in a cluster. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/medical-image-latent-space-visualization).
 
 
 ### Medical Image Generation Using Diffusion Model ###
@@ -28,7 +28,7 @@ In this project, VQ-VAE (Vector Quantized VAE) is leveraged to learn the latent 
 Unconditional progressive generation on the BloodMNIST dataset (left) and a montage of the actual BloodMNIST dataset (right).
 </div>
 
-Image synthesis on medical images can aid in generating more data for biomedical problems, which is hindered due to some legal and technical issues. Using the diffusion model, this problem can be solved. The diffusion model works by progressively adding noise, typically Gaussian, to an image until it is entirely undistinguishable from randomly generated pixels. Then, the noisy image is restored to its original appearance gradually. The forward process (noise addition) is guided by a noise scheduler, and the backward process (image restoration) is carried out by a U-Net model. In this project, the diffusion model is trained on the BloodMNIST dataset from the MedMNIST dataset. This project's source code is hosted on [Github](https://github.com/reshalfahsi/medical-image-generation).
+Image synthesis on medical images can aid in generating more data for biomedical problems, which is hindered due to some legal and technical issues. Using the diffusion model, this problem can be solved. The diffusion model works by progressively adding noise, typically Gaussian, to an image until it is entirely undistinguishable from randomly generated pixels. Then, the noisy image is restored to its original appearance gradually. The forward process (noise addition) is guided by a noise scheduler, and the backward process (image restoration) is carried out by a U-Net model. In this project, the diffusion model is trained on the BloodMNIST dataset from the MedMNIST dataset. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/medical-image-generation).
 
 
 ### Small Molecular Graph Generation for Drug Discovery ###
@@ -42,7 +42,7 @@ The qualitative results of the generated molecules. The chemical structure, the 
 </div>
 
 
-With the advent of deep learning, [drug development](https://en.wikipedia.org/wiki/Drug_development) can be sped up just by learning the patterns within the molecules regarding their chemical properties and composition. The pursuit of good candidates for drugs can be achieved using the generative model which can extrapolate the unseen molecular structure. In this project, one of the most popular generative models, ``Generative Adversarial Network`` or ``GAN``, is utilized. The generator of GAN consists of MLP, and the discriminator of GAN consists of R-GCN + MLP. Nowadays, there are plenty of open-sourced datasets that can be used for this purpose such as the ``QM9 (Quantum Machines 9) dataset``. The GAN model is trained on QM9 dataset and its performances are assessed by means of [molecular metrics](https://github.com/nicola-decao/MolGAN/blob/master/utils/molecular_metrics.py), i.e., quantitative estimate of druglikeness (QED), solubility (defined as the log octanol-water partition coefficient or logP), synthetizability, natural product, drug candidate, valid, unique, novel, and diversity. This project's source code is hosted on [Github](https://github.com/reshalfahsi/molecule-generation-drug-discovery).
+With the advent of deep learning, [drug development](https://en.wikipedia.org/wiki/Drug_development) can be sped up just by learning the patterns within the molecules regarding their chemical properties and composition. The pursuit of good candidates for drugs can be achieved using the generative model which can extrapolate the unseen molecular structure. In this project, one of the most popular generative models, ``Generative Adversarial Network`` or ``GAN``, is utilized. The generator of GAN consists of MLP, and the discriminator of GAN consists of R-GCN + MLP. Nowadays, there are plenty of open-sourced datasets that can be used for this purpose such as the ``QM9 (Quantum Machines 9) dataset``. The GAN model is trained on QM9 dataset and its performances are assessed by means of [molecular metrics](https://github.com/nicola-decao/MolGAN/blob/master/utils/molecular_metrics.py), i.e., quantitative estimate of druglikeness (QED), solubility (defined as the log octanol-water partition coefficient or logP), synthetizability, natural product, drug candidate, valid, unique, novel, and diversity. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/molecule-generation-drug-discovery).
 
 
 ### Self-Supervised Contrastive Learning for Colon Pathology Classification ###
@@ -56,7 +56,7 @@ The qualitative result of the fine-tuned pre-trained SSL model.
 </div>
 
 
-Self-supervised learning, or SSL, has become a modern way to learn the hidden representation of data points. A dataset is not always provided with a label that marks a data point's category or value. SSL mitigates this issue by projecting a data point into an embedding vector representing information beneath. SSL can be trained contrastively, i.e., to measure the similarity between two projected embeddings (original and augmented) using certain metrics, e.g., cosine similarity, Euclidean distance, Manhattan distance, etc. By learning the latent representation, the SSL model can be utilized as a pre-trained model and fine-tuned as needed. The SSL model is divided into three parts: the backbone feature extractor, the embedding projection head, and the classification head. The backbone feature extractor leverages ResNet 18. The embedding head gives the embedding vector. The classification head concludes the classification task's result. Here, two other models are also introduced: the baseline model and the fine-tuned pre-trained SSL model. Both of them consist of a backbone feature extractor and a classification head. Yet, the latter makes use of the trained SSL model's backbone as its own backbone. To evaluate the performance of the models, the PathMNIST of the MedMNIST dataset is utilized. On batched training, the other pairs in the batch relative to a certain pair (positive pair) are treated as negative pairs. This notion is useful for the computation of the contrastive loss: NTXentLoss/InfoNCE. This project's source code is hosted on [Github](https://github.com/reshalfahsi/contrastive-ssl-pathology).
+Self-supervised learning, or SSL, has become a modern way to learn the hidden representation of data points. A dataset is not always provided with a label that marks a data point's category or value. SSL mitigates this issue by projecting a data point into an embedding vector representing information beneath. SSL can be trained contrastively, i.e., to measure the similarity between two projected embeddings (original and augmented) using certain metrics, e.g., cosine similarity, Euclidean distance, Manhattan distance, etc. By learning the latent representation, the SSL model can be utilized as a pre-trained model and fine-tuned as needed. The SSL model is divided into three parts: the backbone feature extractor, the embedding projection head, and the classification head. The backbone feature extractor leverages ResNet 18. The embedding head gives the embedding vector. The classification head concludes the classification task's result. Here, two other models are also introduced: the baseline model and the fine-tuned pre-trained SSL model. Both of them consist of a backbone feature extractor and a classification head. Yet, the latter makes use of the trained SSL model's backbone as its own backbone. To evaluate the performance of the models, the PathMNIST of the MedMNIST dataset is utilized. On batched training, the other pairs in the batch relative to a certain pair (positive pair) are treated as negative pairs. This notion is useful for the computation of the contrastive loss: NTXentLoss/InfoNCE. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/contrastive-ssl-pathology).
 
 
 ### EEG Motor Imagery Classification Using CNN, Transformer, and MLP
@@ -68,7 +68,7 @@ Self-supervised learning, or SSL, has become a modern way to learn the hidden re
 An illustration of the CNN-Transformer-MLP model.
 </div>
 
-The electroencephalogram, or EEG for short, is one of the biosignals that display brain activity in the form of time-series data. EEG can be used to help amputees or paralyzed people move their prosthetic arms via a brain-computer interface (BCI). In order to identify the correct limbs to control from the EEG signal, a combination of CNN, Transformer, and MLP is utilized in this work for motor imagery (MI) classification. CNN converts the epoched EEG signal into meaningful representation in accordance with the signal's non-stationary nature. Transformer finds the global relationship of the given representation from CNN. MLP classifies the expected upper limbs to move based on the extracted information from the Transformer. To gauge the capability of the CNN-Transformer-MLP model, PhysioNet's EEG Motor Movement/Imagery Dataset is used. The model attains an accuracy of ``76.4%`` on the test set. This project's source code is hosted on [Github](https://github.com/reshalfahsi/eeg-motor-imagery-classification).
+The electroencephalogram, or EEG for short, is one of the biosignals that display brain activity in the form of time-series data. EEG can be used to help amputees or paralyzed people move their prosthetic arms via a brain-computer interface (BCI). In order to identify the correct limbs to control from the EEG signal, a combination of CNN, Transformer, and MLP is utilized in this work for motor imagery (MI) classification. CNN converts the epoched EEG signal into meaningful representation in accordance with the signal's non-stationary nature. Transformer finds the global relationship of the given representation from CNN. MLP classifies the expected upper limbs to move based on the extracted information from the Transformer. To gauge the capability of the CNN-Transformer-MLP model, PhysioNet's EEG Motor Movement/Imagery Dataset is used. The model attains an accuracy of ``76.4%`` on the test set. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/eeg-motor-imagery-classification).
 
 
 ### COVID19CT3D
@@ -79,7 +79,7 @@ The electroencephalogram, or EEG for short, is one of the biosignals that displa
 
 </div>
 
-This tutorial will teach you how to train a Deep Learning model based on 3D Convolution. This model will classify whether the volumetric medical image from a 3D CT scan of the thorax is infected by COVID-19 or not. The model's output is a single-valued tensor that represents the probability of being infected by COVID-19. This tutorial is based on [A tutorial notebook on 3D image classification](https://github.com/hasibzunair/3D-image-classification-tutorial). This project's source code is hosted on [Github](https://github.com/reshalfahsi/covid19ct3d).
+This tutorial will teach you how to train a Deep Learning model based on 3D Convolution. This model will classify whether the volumetric medical image from a 3D CT scan of the thorax is infected by COVID-19 or not. The model's output is a single-valued tensor that represents the probability of being infected by COVID-19. This tutorial is based on [A tutorial notebook on 3D image classification](https://github.com/hasibzunair/3D-image-classification-tutorial). This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/covid19ct3d).
 
 
 ### GGB
@@ -90,7 +90,7 @@ This tutorial will teach you how to train a Deep Learning model based on 3D Conv
 
 </div>
 
-This package is implementation of GGB color space from [Development of a Robust Algorithm for Detection of Nuclei and Classification of White Blood Cells in Peripheral Blood Smear Image](https://link.springer.com/content/pdf/10.1007%2Fs10916-018-0962-1.pdf). GGB's source code is hosted on [Github](https://github.com/reshalfahsi/ggb).
+This package is implementation of GGB color space from [Development of a Robust Algorithm for Detection of Nuclei and Classification of White Blood Cells in Peripheral Blood Smear Image](https://link.springer.com/content/pdf/10.1007%2Fs10916-018-0962-1.pdf). GGB's source code is hosted on [GitHub](https://github.com/reshalfahsi/ggb).
 
 
 ### MyQLaNet
@@ -101,7 +101,7 @@ This package is implementation of GGB color space from [Development of a Robust 
 
 </div>
 
-MyQLaNet is a Deep Learning platform for macula detection. It provides end to end system for macula detection with graphical user interface. MyQLaNet's source code is hosted on [Github](https://github.com/reshalfahsi/myqlanet).
+MyQLaNet is a Deep Learning platform for macula detection. It provides end to end system for macula detection with graphical user interface. MyQLaNet's source code is hosted on [GitHub](https://github.com/reshalfahsi/myqlanet).
 
 
 -----
@@ -120,7 +120,7 @@ The rendered 3D view of a bulldozer viewed from <i>x</i> = 0, <i>y</i> = 0, <i>z
 
 </div>
 
-Legend has it that the artificial neural network (ANN) is infamously known as the universal approximator, which can fit any existing function. By exploiting this fact, we can build a network that approximates a function that maps spatial positions (_x_, _y_, _z_) and camera rays (these rays are acquired through the calculation of the camera matrix involving viewing directions (_θ_ (rotating along the _y_-axis), _ϕ_ (rotating along the _x_-axis)) and the spatial positions) to RGB pixels. Such a network, called the Neural Radiance Field, or NeRF in short, can be used to solve the problem of novel view synthesis of a scene. The network is coerced to overfit the function, which generates an RGB image (and also a depth map). These generated images (the final images are procured by computing the transmittance that is applied to the freshly generated images) from multiple angles are then collected, rendering the 3D representation of a certain object. In this project, a bulldozer from the Tiny NeRF dataset is used. This project's source code is hosted on [Github](https://github.com/reshalfahsi/novel-view-synthesis)
+Legend has it that the artificial neural network (ANN) is infamously known as the universal approximator, which can fit any existing function. By exploiting this fact, we can build a network that approximates a function that maps spatial positions (_x_, _y_, _z_) and camera rays (these rays are acquired through the calculation of the camera matrix involving viewing directions (_θ_ (rotating along the _y_-axis), _ϕ_ (rotating along the _x_-axis)) and the spatial positions) to RGB pixels. Such a network, called the Neural Radiance Field, or NeRF in short, can be used to solve the problem of novel view synthesis of a scene. The network is coerced to overfit the function, which generates an RGB image (and also a depth map). These generated images (the final images are procured by computing the transmittance that is applied to the freshly generated images) from multiple angles are then collected, rendering the 3D representation of a certain object. In this project, a bulldozer from the Tiny NeRF dataset is used. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/novel-view-synthesis)
 
 
 ### Image Super-Resolution Using ESRGAN ###
@@ -132,7 +132,7 @@ Legend has it that the artificial neural network (ANN) is infamously known as th
 Qualitative comparison between the reference high-resolution images (left column), high-resolution images via bicubic interpolation (middle column), and predicted high-resolution images through ESRGAN (right column).
 </div>
 
-Image super-resolution attempts to produce pixels within the image to fill the lack of information due to its low-resolution nature. Hence, it yields a higher-resolution image. One approach to this problem is via generative networks, e.g., ESRGAN (Enhanced Super-Resolution Generative Adversarial Network). This type of GAN is built explicitly for image super-resolution by considering several losses, i.e., contextual loss (focus on the distribution of the feature), perceptual loss (pixel-wise loss), and adversarial loss. These three losses are utilized for the generator loss. On the contrary, the discriminator loss only takes into account the adversarial loss. There are two stages during training: (1) train only the generator on the perceptual loss, and (2) train the generator and discriminator based on those, as mentioned earlier. The model is trained and evaluated on the BSDS500 dataset. The final result of the predicted high-resolution image is subjected to the sharpening method by subtracting the image with the Laplacian of the image. This project's source code is hosted on [Github](https://github.com/reshalfahsi/image-super-resolution).
+Image super-resolution attempts to produce pixels within the image to fill the lack of information due to its low-resolution nature. Hence, it yields a higher-resolution image. One approach to this problem is via generative networks, e.g., ESRGAN (Enhanced Super-Resolution Generative Adversarial Network). This type of GAN is built explicitly for image super-resolution by considering several losses, i.e., contextual loss (focus on the distribution of the feature), perceptual loss (pixel-wise loss), and adversarial loss. These three losses are utilized for the generator loss. On the contrary, the discriminator loss only takes into account the adversarial loss. There are two stages during training: (1) train only the generator on the perceptual loss, and (2) train the generator and discriminator based on those, as mentioned earlier. The model is trained and evaluated on the BSDS500 dataset. The final result of the predicted high-resolution image is subjected to the sharpening method by subtracting the image with the Laplacian of the image. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/image-super-resolution).
 
 
 ### Zero-Reference Low-Light Image Enhancement ###
@@ -146,7 +146,7 @@ Image super-resolution attempts to produce pixels within the image to fill the l
 The qualitative results of the image enhancement method (comparing the original, the ground-truth, the PIL autocontrast, and the prediction).
 </div>
 
-Low-light image enhancement aims to raise the quality of pictures taken in dim lighting, resulting in a brighter, clearer, and more visually appealing image without adding too much noise or distortion. One of the state-of-the-art methods for this computer vision task is Zero-DCE. This method uses just a low-light image without any image reference to learn how to produce an image with higher brightness. There are four loss functions crafted specifically for this zero-reference low-light image enhancement method, i.e., color constancy loss, exposure loss, illumination smoothness loss, and spatial consistency loss. This project's source code is hosted on [Github](https://github.com/reshalfahsi/zero-reference-low-light-image-enhancement).
+Low-light image enhancement aims to raise the quality of pictures taken in dim lighting, resulting in a brighter, clearer, and more visually appealing image without adding too much noise or distortion. One of the state-of-the-art methods for this computer vision task is Zero-DCE. This method uses just a low-light image without any image reference to learn how to produce an image with higher brightness. There are four loss functions crafted specifically for this zero-reference low-light image enhancement method, i.e., color constancy loss, exposure loss, illumination smoothness loss, and spatial consistency loss. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/zero-reference-low-light-image-enhancement).
 
 
 ### Anchor-Free Object Detection
@@ -158,7 +158,7 @@ Low-light image enhancement aims to raise the quality of pictures taken in dim l
 A car (left), three sheep (middle), a person and a bicycle (right) are detected.
 </div>
 
-Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model. This project's source code is hosted on [Github](https://github.com/reshalfahsi/anchor-free-object-detection).
+Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/anchor-free-object-detection).
 
 
 
@@ -172,7 +172,7 @@ Anchor boxes have been the prevalent way to generate candidates for the ground t
 Stable diffusion dreams of "Alien invasion of Mars colonization in the future".
 </div>
 
-Generate video by stable diffusion in Colab Notebook. This project's source code is hosted on [Github](https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook).
+Generate video by stable diffusion in Colab Notebook. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/stable-diffusion-dreaming-notebook).
 
 
 ### Image Captioning API
@@ -183,7 +183,7 @@ Generate video by stable diffusion in Colab Notebook. This project's source code
 
 </div>
 
-Minimal implementation of image captioning API hosted on [Heroku](https://image-captioning-69420.herokuapp.com/). It receives an image and responds with a caption regarding the image. This project's source code is hosted on [Github](https://github.com/reshalfahsi/image-captioning-api).
+Minimal implementation of image captioning API hosted on [Heroku](https://image-captioning-69420.herokuapp.com/). It receives an image and responds with a caption regarding the image. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/image-captioning-api).
 
 
 ### SotoDemoBot
@@ -194,7 +194,7 @@ Minimal implementation of image captioning API hosted on [Heroku](https://image-
 
 </div>
 
-Simple Object detection Telegram bOt DEMO: predict the objects in the given image. Use ``/predict <URL>`` to predict the objects in the image of given url. This project's source code is hosted on [Github](https://github.com/reshalfahsi/object-detection-bot).
+Simple Object detection Telegram bOt DEMO: predict the objects in the given image. Use ``/predict <URL>`` to predict the objects in the image of given url. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/object-detection-bot).
 
 
 -----
@@ -214,7 +214,7 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 The attention maps from each of the Transformer's heads. Almost every corresponding word pair (English-German) at each head pays attention mutually.
 </div>
 
-Neural Machine Translation (NMT) is a family model or an approach to solving machine translation problems through an artificial neural network, typically deep learning. In other words, the model is dispatched to translate a sequence of words from the source language to the target language. In this case, the source language would be English and the target would be German. To fabricate the model, the Transformer layers are leveraged. The NMT model is trained on the Multi30K dataset. The model is then assessed on a subset of the dataset, which is the Flickr 2016 test dataset. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neural-machine-translation).
+Neural Machine Translation (NMT) is a family model or an approach to solving machine translation problems through an artificial neural network, typically deep learning. In other words, the model is dispatched to translate a sequence of words from the source language to the target language. In this case, the source language would be English and the target would be German. To fabricate the model, the Transformer layers are leveraged. The NMT model is trained on the Multi30K dataset. The model is then assessed on a subset of the dataset, which is the Flickr 2016 test dataset. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/neural-machine-translation).
 
 
 ### Movie Review Sentiment Analysis Using CNN and MLP
@@ -226,7 +226,7 @@ Neural Machine Translation (NMT) is a family model or an approach to solving mac
 Visualization of the first layer of CNN on the negative review.
 </div>
 
-Audiences' reactions to the movie they have watched can be presented in a text format called reviews. These reviews can be polarized into two clusters: positive responses and negative responses. Using CNN and MLP, one can perform sentiment analysis on movie reviews to automatically recognize the viewer's tendency toward a particular movie. CNN is used for extracting the latent information within the text format. MLP leverages the extracted information and carries out the classification task. The CNN-MLP model is evaluated with Standford's IMBD Movie Review dataset. On the test set, the model achieves ``85.6%`` accuracy. This project's source code is hosted on [Github](https://github.com/reshalfahsi/movie-review-sentiment-analysis).
+Audiences' reactions to the movie they have watched can be presented in a text format called reviews. These reviews can be polarized into two clusters: positive responses and negative responses. Using CNN and MLP, one can perform sentiment analysis on movie reviews to automatically recognize the viewer's tendency toward a particular movie. CNN is used for extracting the latent information within the text format. MLP leverages the extracted information and carries out the classification task. The CNN-MLP model is evaluated with Standford's IMBD Movie Review dataset. On the test set, the model achieves ``85.6%`` accuracy. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/movie-review-sentiment-analysis).
 
 
 ### Your Kind Friend Bot: Unreliable Chatbot
@@ -237,7 +237,7 @@ Audiences' reactions to the movie they have watched can be presented in a text f
 
 </div>
 
-Your typical kind friend who talk nonsense just to kill time. It can respond to text or image. Visit [here](https://t.me/yourkindfriendbot). This project's source code is hosted on [Github](https://github.com/reshalfahsi/ykfbot).
+Your typical kind friend who talk nonsense just to kill time. It can respond to text or image. Visit [here](https://t.me/yourkindfriendbot). This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/ykfbot).
 
 
 -----
@@ -256,7 +256,7 @@ Your typical kind friend who talk nonsense just to kill time. It can respond to 
 Itsuki Nakano - Asmalibrasi (AI Cover).
 </div>
 
-Cover your favorite song by your favorite singer. This project's source code is hosted on [Github](https://github.com/reshalfahsi/AI-Cover-Song).
+Cover your favorite song by your favorite singer. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/AI-Cover-Song).
 
 
 ### Music Genre Classification
@@ -267,7 +267,7 @@ Cover your favorite song by your favorite singer. This project's source code is 
 
 </div>
 
-Classify input audio into a particular genre of music. First, the audio is preprocessed via [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum). Next, using MLP, we obtain the probability distribution of 10 classes of music genres. Before applying MLP to the MFCC, the cepstral coefficients with the length of the number of sequence of time has to be averaged and subjected to [CMVN](https://en.wikipedia.org/wiki/Cepstral_mean_and_variance_normalization). This project's source code is hosted on [Github](https://github.com/reshalfahsi/music-genre-classification).
+Classify input audio into a particular genre of music. First, the audio is preprocessed via [MFCC](https://en.wikipedia.org/wiki/Mel-frequency_cepstrum). Next, using MLP, we obtain the probability distribution of 10 classes of music genres. Before applying MLP to the MFCC, the cepstral coefficients with the length of the number of sequence of time has to be averaged and subjected to [CMVN](https://en.wikipedia.org/wiki/Cepstral_mean_and_variance_normalization). This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/music-genre-classification).
 
 
 -----
@@ -284,7 +284,7 @@ Classify input audio into a particular genre of music. First, the audio is prepr
 The visitor prediction at one of the vital mathematics articles on Wikipedia.
 </div>
 
-Temporal Graph Neural Network or Temporal GNN is one of the variant of the GNN which handles the spatio-temporal data. The term "spatio-" refers to the nature of the graph that is closely related to the spatial relationship that exists in the image data (recall that an image is basically a graph), and the term "temporal" here indicates the data may be progressively changing in a sequence of time. In this project, the [Chebysev GCNN+LSTM](https://arxiv.org/pdf/1612.07659.pdf) module and the Wiki Maths dataset are leveraged, which are provided by [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal). The complete Temporal GNN model contains the Chebysev GCNN+LSTM module, followed by a fully connected layer. Here, the model is trained to predict the daily user visits to Wikipedia's vital mathematics articles (represented by nodes/vertices). The graph's characteristic in the dataset is non-heterogenous and static. The details of the dataset can be seen [here](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/dataset.html#torch_geometric_temporal.dataset.wikimath.WikiMathsDatasetLoader). This project's source code is hosted on [Github](https://github.com/reshalfahsi/web-traffic-prediction).
+Temporal Graph Neural Network or Temporal GNN is one of the variants of the GNN which handles the spatio-temporal data. The term "spatio-" refers to the nature of the graph that is closely related to the spatial relationship that exists in the image data (recall that an image is basically a graph), and the term "temporal" here indicates the data may be progressively changing in a sequence of time. In this project, the [Chebysev GCNN+LSTM](https://arxiv.org/pdf/1612.07659.pdf) module and the Wiki Maths dataset are leveraged, which are provided by [PyTorch Geometric Temporal](https://github.com/benedekrozemberczki/pytorch_geometric_temporal). The complete Temporal GNN model contains the Chebysev GCNN+LSTM module, followed by a fully connected layer. Here, the model is trained to predict the daily user visits to Wikipedia's vital mathematics articles (represented by nodes/vertices). The graph's characteristic in the dataset is non-heterogenous and static. The details of the dataset can be seen [here](https://pytorch-geometric-temporal.readthedocs.io/en/latest/modules/dataset.html#torch_geometric_temporal.dataset.wikimath.WikiMathsDatasetLoader). This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/web-traffic-prediction).
 
 
 
@@ -294,10 +294,10 @@ Temporal Graph Neural Network or Temporal GNN is one of the variant of the GNN w
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/node-classification/master/assets/qualitative_result.gif" width="600">
 
-The visualization of the embedding space of the nodes in the large graph in the course of training process.
+The visualization of the embedding space of the nodes in the large graph in the course of the training process.
 </div>
 
-A graph neural network (GNN) is a type of neural network leveraged to handle graph data. One kind of graph data is a single graph that is large enough to contain a myriad of nodes. Later, we can attribute each node to well-qualified features and discriminate them accordingly. Then, by means of GNN, we can perform node classification on this large graph. The CORA dataset, the publicly available dataset for node classification on a large graph, is used in this tutorial. The graph feature extractor utilized in this tutorial consists of a sequence of ``ResGatedGraphConv``, ``SAGEConv``, and ``TransformerConv``, which are implemented by [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/index.html). The final classifier comprises MLP. This project's source code is hosted on [Github](https://github.com/reshalfahsi/node-classification).
+A graph neural network (GNN) is a type of neural network leveraged to handle graph data. One kind of graph data is a single graph that is large enough to contain a myriad of nodes. Later, we can attribute each node to well-qualified features and discriminate them accordingly. Then, by means of GNN, we can perform node classification on this large graph. The CORA dataset, the publicly available dataset for node classification on a large graph, is used in this tutorial. The graph feature extractor utilized in this tutorial consists of a sequence of ``ResGatedGraphConv``, ``SAGEConv``, and ``TransformerConv``, which are implemented by [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/index.html). The final classifier comprises MLP. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/node-classification).
 
 
 -----
@@ -314,7 +314,7 @@ A graph neural network (GNN) is a type of neural network leveraged to handle gra
 
 </div>
 
-PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, ``SeparableConv3d``, ``LazySeparableConv1d``, ``LazySeparableConv2d``, and ``LazySeparableConv3d``. This package's source code is hosted on [Github](https://github.com/reshalfahsi/separableconv-torch).
+PyTorch (unofficial) implementation of Depthwise Separable Convolution. This type of convolution is introduced by Chollet in [Xception: Deep Learning With Depthwise Separable Convolutions](https://arxiv.org/abs/1610.02357). This package provides ``SeparableConv1d``, ``SeparableConv2d``, ``SeparableConv3d``, ``LazySeparableConv1d``, ``LazySeparableConv2d``, and ``LazySeparableConv3d``. This package's source code is hosted on [GitHub](https://github.com/reshalfahsi/separableconv-torch).
 
 
 
@@ -326,7 +326,7 @@ PyTorch (unofficial) implementation of Depthwise Separable Convolution. This typ
 
 </div>
 
-A naive implementation of neural network. The code structure is heavily inspired by [PyTorch](https://github.com/pytorch/pytorch) and [TensorFlow](https://github.com/tensorflow/tensorflow). However, this package is used for educational purposes and is not intended to be adopted in production. This project's source code is hosted on [Github](https://github.com/reshalfahsi/neuralnetwork).
+A naive implementation of a neural network. The code structure is heavily inspired by [PyTorch](https://github.com/pytorch/pytorch) and [TensorFlow](https://github.com/tensorflow/tensorflow). However, this package is used for educational purposes and is not intended to be adopted in production. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/neuralnetwork).
 
 
 -----
@@ -344,7 +344,7 @@ A naive implementation of neural network. The code structure is heavily inspired
 The rocket successfully landed on the surface of the moon after hovering under the control of the learned policy from the REINFORCE algorithm.
 </div>
 
-In the context of machine learning, reinforcement learning (RL) is one of the learning paradigms involving interaction between agent and environment. Recently, RL has been extensively studied and implemented in the field of control theory. The classic example of a control theory problem is trajectory optimization, such as for spacecraft or rockets. Here, in the RL lingo, rocket can be treated as agent and its environment would be outer space, e.g., the surface of the moon. The environment obeys the Markov Decision Process (MDP) property. The agent obtains reward and observed state based on action that is given to the environment. The action taken by the agent is determined by the policy distribution that can be learned in the course of the training process. To learn the policy, one approach is to utilizing the REINFORCE algorithm. This method is a policy gradient algorithm that maximizes the expected return (reward) that incorporates Monte Carlo approximation. In practice, the gradient of the expected return will be our objective function to update our policy distribution. This project's source code is hosted on [Github](https://github.com/reshalfahsi/rocket-trajectory-optimization).
+In the context of machine learning, reinforcement learning (RL) is one of the learning paradigms involving interaction between agent and environment. Recently, RL has been extensively studied and implemented in the field of control theory. The classic example of a control theory problem is trajectory optimization, such as for spacecraft or rockets. Here, in the RL lingo, a rocket can be treated as an agent, and its environment would be outer space, e.g., the surface of the moon. The environment obeys the Markov Decision Process (MDP) property. The agent obtains a reward and observes a state based on the action that is given to the environment. The action taken by the agent is determined by the policy distribution that can be learned in the course of the training process. To learn the policy, one approach is to utilize the REINFORCE algorithm. This method is a policy gradient algorithm that maximizes the expected return (reward), incorporating Monte Carlo approximation. In practice, the gradient of the expected return will be our objective function to update our policy distribution. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/rocket-trajectory-optimization).
 
 
 ### Suction Arm Manipulator Robot
@@ -355,7 +355,7 @@ In the context of machine learning, reinforcement learning (RL) is one of the le
     </a>
 </div>
 
-Simulate the Suction Arm Manipulator Robot to pickup daily objects inspired by Amazon Robotics Challenge. This project's source code is hosted on [Github](https://github.com/reshalfahsi/arm-suction-sim).
+Simulate the Suction Arm Manipulator Robot to pick up daily objects inspired by the Amazon Robotics Challenge. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/arm-suction-sim).
 
 
 -----
@@ -363,4 +363,4 @@ Simulate the Suction Arm Manipulator Robot to pickup daily objects inspired by A
 
 ## Other Open Source Software ##
 
-For a list of my open source software, please take a look at my [Github](https://github.com/reshalfahsi).
+For a list of my open-source software, please take a look at my [GitHub](https://github.com/reshalfahsi).
