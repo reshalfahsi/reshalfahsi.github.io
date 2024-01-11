@@ -116,7 +116,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/novel-view-synthesis/master/assets/qualitative_result.gif" alt="qualitative_result" width="400"> 
 
-The rendered 3D view of a bulldozer viewed from <i>z</i> = 0, <i>z</i> = 0, <i>z</i> = 3.5, <i>ϕ</i> = −15°, and <i>θ</i> = 0° to 360°. 
+The rendered 3D view of a bulldozer viewed from <i>x</i> = 0, <i>y</i> = 0, <i>z</i> = 3.5, <i>ϕ</i> = −15°, and <i>θ</i> = 0° to 360°. 
 
 </div>
 
