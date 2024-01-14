@@ -7,6 +7,20 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### Knowledge Distillation for Skin Lesion Classification
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/knowledge-distillation/master/assets/distilled_qualitative.png" width="600">
+
+The qualitative result of the distilled model.
+</div>
+
+The goal of knowledge distillation is to improve the performance of the half-witted model, which, most of the time, has fewer parameters, by allowing it to learn from the more competent model or the teacher model. The half-witted model, or the student model, excerpts the knowledge from the teacher model by matching its class distribution to the teacher model's. To make the distributions softer, we can adjust a temperature _T_ to them (this is done by dividing the raw distributions before softmax by the temperature). This project designates EfficientNet-B0 as the teacher and SqueezeNet v1.1 as the student. These models will be experimented on the DermaMNIST dataset of MedMNIST. We will take a look at the performance of the teacher, the student (without knowledge distillation), and the student (with knowledge distillation) in the result section. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/knowledge-distillation).
+
+
+
+
 ### Medical Image Latent Space Visualization Using VQ-VAE ###
 
 <div align="center">
