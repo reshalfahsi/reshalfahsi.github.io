@@ -7,7 +7,20 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
-### Knowledge Distillation for Skin Lesion Classification
+### Medical Image Similarity Search Using a Siamese Network With a Contrastive Loss ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/medical-image-similarity-search/master/assets/qualitative.png" width="600">
+
+The image similarity search results for DermaMNIST (first row), PneumoniaMNIST (second row), RetinaMNIST (third row), and BreastMNIST (fourth row).
+</div>
+
+Obtaining the ontological account of an image numerically can be earned via a Siamese network. The anatomy of this network has a twin architecture, consisting of convolutional and fully connected layers with shared weights. Each architecture digests an image and yields the vector embedding (the ontological or latent representation) of that image. These two vectors are then subjected to the Euclidean distance calculation. Next, the result is funneled to the last fully connected layer to get the logit describing their similarity. To learn the representation, here, we can leverage contrastive loss as our objective function to be optimized. The network is trained on paired images, i.e., positive and negative. In this project, the positive pairs are two images that belong to the same dataset, and the negative pairs are two images from distinct datasets. Here, subsets of the MedMNIST dataset are utilized: DermaMNIST, PneumoniaMNIST, RetinaMNIST, and BreastMNIST. Then, accuracy is used to evaluate the trained network. Afterward, we encode all images of the train and validation sets into embedding vectors and store them in the PostgreSQL database. So, sometimes later, we can use the embedding vectors to retrieve similar images based on a query image (we can obtain it from the test set). To find similar images, FAISS (Facebook AI Similarity Search) is employed. FAISS helps us seek the closest vectors to the query vector.
+
+
+
+### Knowledge Distillation for Skin Lesion Classification ###
 
 <div align="center">
 
