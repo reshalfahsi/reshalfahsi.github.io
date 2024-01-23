@@ -136,6 +136,21 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ## Computer Vision ##
 
 
+### Action Recognition Using CNN + Bidirectional RNN ###
+
+
+<div align="center"> 
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/action-recognition/master/assets/result.gif" alt="qualitative_result" width="400"> 
+
+The action recognition results of the CNN + Bidirectional RNN model. Several actions are shown in the compilation video: <i>brush hair</i>, <i>throw</i>, <i>dive</i>, <i>ride bike</i>, and <i>swing baseball.</i>
+
+</div>
+
+
+Given a video, we can undergo recognition or analysis to decide what action occurred in the clip. By nature, videos are a sequence of frames. Consequently, performing action recognition on video deals with processing spatio-temporal data. Here, we can make use of the HMDB51 dataset, consisting of 6k+ clips of 51 actions. This dataset has three separate train/test splits. Striving for simplicity, this project utilizes the first training split as the training set, the second testing split as the validation set, and the third testing split as the testing set. Regarding the action recognition model, CNN is customarily adopted to extract spatial information. Thus, a CNN architecture, MnasNet, is put into use. Next, to handle the temporal information, bidirectional RNN is employed. Succinctly, the action recognition model in this project is composed of CNN and bidirectional RNN. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/action-recognition)
+
+
 ### Novel View Synthesis Using NeRF ###
 
 <div align="center"> 
