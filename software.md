@@ -136,6 +136,21 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ## Computer Vision ##
 
 
+### Point Cloud Segmentation Using PointNet ###
+
+
+<p align="center"> 
+   <a href="https://reshalfahsi.github.io/point-cloud-segmentation">
+       <img src="https://raw.githubusercontent.com/reshalfahsi/point-cloud-segmentation/master/assets/result.png" alt="qualitative_result"> 
+   </a>
+   The segmentation result for the motorbike subcategory of the ShapeNet dataset with the label: <i>wheel</i>, <i>seat</i>, <i>gas_tank</i>, <i>light</i>, and <i>handle</i>.
+</p>
+
+
+In this project, PointNet is leveraged for the segmentation of parts of a certain shape in the form of point cloud data. The data points are obtained from the ShapeNet dataset, i.e., ShapeNetCore. This project chooses the shape of a motorbike. PointNet is utilized due to its nature, which is invariant to permutation. Keep in mind that point cloud data has zero care for the spatial relationship between points in the point cloud, even though it stores information regarding the object's location in the space. In other words, the order of points must be negligible and not influence the result. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/point-cloud-segmentation).
+
+
+
 ### Action Recognition Using CNN + Bidirectional RNN ###
 
 
