@@ -221,10 +221,10 @@ Low-light image enhancement aims to raise the quality of pictures taken in dim l
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/anchor-free-object-detection/master/assets/qualitative_result.png" width="1200">
 
-A car (left), three sheep (middle), a person and a bicycle (right) are detected.
+A person, a motorbike (left), a bird (middle), and two TV monitors (right) are detected.
 </div>
 
-Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation set of both datasets is used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/anchor-free-object-detection).
+Anchor boxes have been the prevalent way to generate candidates for the ground truth bounding boxes in the object detection problem. Yet, this approach is such a hassle and downright confusing. This tutorial leverages an object detection method named [FastestDet](https://github.com/dog-qiuqiu/FastestDet) that is lightweight and anchor-free. ``PASCAL VOC 2007 and 2012`` datasets are utilized to evaluate the model's capability. Here, the train and validation sets of ``PASCAL VOC 2012`` are used for the train, validation, and test set in this tutorial with a ratio of ``81:9:10``. Eventually, the inference set (the test set of ``PASCAL VOC 2007``) is used to see the qualitative performance of the model. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/anchor-free-object-detection).
 
 
 
