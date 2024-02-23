@@ -138,7 +138,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ### Multi-Object Tracking Using FCOS + DeepSORT ###
 
 
-<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/multi-object-tracking/master/assets/KITTI-16.gif" alt="KITTI-16" > <br /> The result on KITTI-16.  <br /> </p>
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/multi-object-tracking/master/assets/KITTI-16.gif" alt="KITTI-16" > The result on KITTI-16.  <br /> </p>
 
 
 > An idiot admires complexity, a genius admires simplicity... 
