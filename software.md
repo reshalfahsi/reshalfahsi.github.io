@@ -142,6 +142,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 
 > An idiot admires complexity, a genius admires simplicity... 
+
 > ― Terry Davis
 
 
