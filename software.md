@@ -135,6 +135,15 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 ## Computer Vision ##
 
+
+### Image Classification Using Swin Transformer With RandAugment, CutMix, and MixUp ###
+
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/image-classification-augmentation/master/assets/val_acc_curve.png" alt="acc_curve" > Accuracy curves of the models on the validation set.  <br /> </p>
+
+In this project, we will explore three distinct Swin Transformers, i.e., without augmentation, with augmentation, and without using the pre-trained weight (or from scratch). Here, the augmentation is undertaken with RandAugment, CutMix, and MixUp. We are about to witness the consequences of utilizing augmentation and pre-trained weight on the models on the imbalanced dataset, i.e., Caltech-256. Applying the augmentation and pre-trained weight clearly boosts the performance of the model. Not to mention the pre-trained weight insanely pushes the model to effectively predict the right label in the top-1 and top-5. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/image-classification-augmentation).
+
+
 ### Multi-Object Tracking Using FCOS + DeepSORT ###
 
 
