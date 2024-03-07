@@ -135,6 +135,13 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 ## Computer Vision ##
 
+### Domain Adaptation With Domain-Adversarial Training of Neural Networks ###
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/domain-adaptation/master/assets/qualitative.png" alt="qualitative" > Some results on the SVHN dataset as the target dataset. <br /> </p>
+
+Domain adaptation's main objective is to adapt the model trained on the source dataset in which the label is available to perform decently on the target dataset, which has a pertinent distribution yet the label is not already on hand. In this project, the pretrained RegNetY_400MF is leveraged as the model undergoing the adaptation procedure. The procedure is conducted with Domain-Adversarial Training of Neural Networks or DANN. Succinctly, DANN works by adversarially training the appointed model on the source dataset along with the target dataset. DANN uses an extra network as the domain classifier (the critic or discriminator) and applies a gradient reversal layer to the output of the feature extractor. Thus, the losses accounted for this scheme are the classification head loss (the source dataset) and the domain loss (the source dataset and the target dataset). Here, the source dataset is MNIST and the target dataset is SVHN. On MNIST, various data augmentations (geometric and photometric) are utilized on the fly during training. To monitor the adaptation performance, the testing set of SVHN is designated as the validation and testing set. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/domain-adaptation).
+
+
 ### Image Classification With Vision Transformer ###
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/image-classification-vit/master/assets/qualitative.png" alt="qualitative" > Several prediction results of ViT and their attention map. <br /> </p>
