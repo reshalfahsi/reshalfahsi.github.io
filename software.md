@@ -140,7 +140,7 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/instance-segmentation-vit-maskrcnn/master/assets/qualitative-2.png" alt="qualitative-2" > One of qualitative results from the ViT-based Mask R-CNN model. <br /> </p>
 
-Instance segmentation aims at dichotomizing a pixel acting as a sub-object of a unique entity in the scene. One of the approaches, which combines object detection and semantic segmentation, is Mask R-CNN. Furthermore, we can also incorporate ViT as the backbone of Mask R-CNN. In this project, the pre-trained ViT-based Mask R-CNN model is trained and evaluated on the dataset from the Penn-Fudan Database for Pedestrian Detection and Segmentation. With a ratio of 80:10:10, the train, validation, and test sets are distributed. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/instance-segmentation-vit-maskrcnn).
+Instance segmentation aims at dichotomizing a pixel acting as a sub-object of a unique entity in the scene. One of the approaches, which combines object detection and semantic segmentation, is Mask R-CNN. Furthermore, we can also incorporate ViT as the backbone of Mask R-CNN. In this project, the pre-trained ViT-based Mask R-CNN model is fine-tuned and evaluated on the dataset from the Penn-Fudan Database for Pedestrian Detection and Segmentation. With a ratio of 80:10:10, the train, validation, and test sets are distributed. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/instance-segmentation-vit-maskrcnn).
 
 
 ### Domain Adaptation With Domain-Adversarial Training of Neural Networks ###
