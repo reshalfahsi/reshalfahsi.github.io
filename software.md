@@ -315,6 +315,14 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 ## Natural Language Processing ##
 
 
+### Visual Question Answering Using CLIP + LSTM ###
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/vqa-clip-lstm/master/assets/architecture.png" alt="architecture" > CLIP + LSTM architecture. <br /> </p>
+
+The visual question-answering problem can be described as "asking our computer to reply to the assigned questions about a particular image." In this project, a CLIP + LSTM architecture comes to lend a helping hand, trying to solve the problem. The image and text encoders of CLIP cultivate the given image and question, respectively. The concatenated image-text representation from CLIP is then applied to the vectorized answer text via the Hadamard product before feeding it to LSTM. By a fashion of autoregressive, the answer to the question is finally served to us. Here, the VizWiz-VQA dataset is utilized to train, validate, and test the model. The training set of the dataset is used in the training and validation phases. It is divided by a ratio of 99:1. The validation set of the dataset is employed for testing. The SQuAD metric is utilized to gauge the performance of the model quantitatively. In inference time, the test set of VizWiz-VQA is leveraged. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/vqa-clip-lstm).
+
+
+
 ### English-To-German Neural Machine Translation Using Transformer ###
 
 
