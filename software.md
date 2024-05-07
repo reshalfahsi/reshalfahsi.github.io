@@ -7,6 +7,21 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### Visualizing 3D ResNet for Medical Image Classification With Score-CAM ###
+
+
+<div align="center">
+    <a href="https://reshalfahsi.github.io/3d-viz-score-cam">
+       <img src="https://raw.githubusercontent.com/reshalfahsi/3d-viz-score-cam/blob/master/assets/plot_00404.png" alt="architecture" >
+       </img>
+    </a>
+    Live interaction with the 3D Score-CAM result.
+    <br />
+</div>
+
+Intepretability is one of the concerns regarding the application of AI, or, to be exact, deep learning, in the medical field, especially medical image recognition. In a venture seeking to explain what is going on or what the network perceives computationally, one can leverage the class activation map (CAM) of the model. Score-CAM, one of the CAM variants, breakthroughs the preceding CAM methods by dropping the reliance on gradients. Instead, it benefits the full potential of the forward propagation of the model, running inference by normalized-weighting via element-wise product with the input. Then, the output logit of the target category is combined with the CAM acquired before to get the final outcome. In this project, the 3D version of ResNet is employed. To evaluate the aforementioned methods, the OrganMNIST3D dataset of MedMNIST is used. The deletion under the curve (DAUC) and the insertion under the curve (IAUC) are adopted to measure the performance of Score-CAM. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/3d-viz-score-cam).
+
+
 ### Medical Image Similarity Search Using a Siamese Network With a Contrastive Loss ###
 
 <div align="center">
