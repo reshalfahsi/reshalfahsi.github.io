@@ -13,7 +13,6 @@ title: Software
 <div align="center">
     <a href="https://reshalfahsi.github.io/3d-viz-score-cam">
        <img src="https://raw.githubusercontent.com/reshalfahsi/3d-viz-score-cam/master/assets/plot_00404.png" alt="architecture" >
-       </img>
     </a>
     Live interaction with the 3D Score-CAM result.
     <br />
