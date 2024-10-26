@@ -150,6 +150,15 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 ## Computer Vision ##
 
 
+### Semi-Supervised Learning with Pseudo-Labeling ###
+
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/semi-supervised-pseudo-labeling/master/assets/qualitative.png" alt="qualitative" > The grid of qualitative results. <br /> </p>
+
+
+The need for semi-supervised learning stems from the cost of annotating datasets. Datasets do not always come with fully labeled data. Henceforth, we can cleverly perform compound training with labeled and unlabeled data. One of the semi-supervised methods we can employ is pseudo-labeling. At first, we train our model with labeled data and generate labels for unlabeled data based on it. Next, we train the pre-trained model with both labeled and unlabeled data. This is possible due to pseudo-labels generated earlier. In this project, DenseNet-121 is utilized. The model is trained on CIFAR-10 with 1000 labels. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/semi-supervised-pseudo-labeling).
+
+
 ### Instance Segmentation Using ViT-based Mask R-CNN ###
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/instance-segmentation-vit-maskrcnn/master/assets/qualitative-2.png" alt="qualitative-2" > One of qualitative results from the ViT-based Mask R-CNN model. <br /> </p>
