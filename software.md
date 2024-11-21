@@ -515,6 +515,18 @@ Simulate the Suction Arm Manipulator Robot to pick up daily objects inspired by 
 
 -----
 
+## Quantum Machine Learning ##
+
+### Image Recognition with Quantum LeNet
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/quantum-lenet/master/assets/quantum-lenet.png" alt="quantum-lenet" > The Quantum LeNet model. The quantum layer consists of embedding, quantum circuits, and measurement. <br /> </p>
+
+
+Quantum computing has shaped our future hope of accomplishing calculations one million times faster than before. Its uses have influenced many things, including machine learning. Such collaboration, known as quantum machine learning (QML), has allowed quantum computers to perform a variety of machine learning tasks. In this project, we will look at how a quantum-based deep-learning model performs image classification on the MNIST dataset. The quantum-based model is a combination of classical and quantum layers. The model is based on LeNet and includes a quantum fully connected layer. The classical and quantum layers are implemented using PyTorch and PennyLane, respectively. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/quantum-lenet).
+
+
+-----
+
 
 ## Other Open Source Software ##
 
