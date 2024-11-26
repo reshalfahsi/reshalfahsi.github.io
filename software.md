@@ -525,6 +525,13 @@ Simulate the Suction Arm Manipulator Robot to pick up daily objects inspired by 
 Quantum computing has shaped our future hope of accomplishing calculations one million times faster than before. Its uses have influenced many things, including machine learning. Such collaboration, known as quantum machine learning (QML), has allowed quantum computers to perform a variety of machine learning tasks. In this project, we will look at how a quantum-based deep-learning model performs image classification on the MNIST dataset. The quantum-based model is a combination of classical and quantum layers. The model is based on LeNet and includes a quantum fully connected layer. The classical and quantum layers are implemented using PyTorch and PennyLane, respectively. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/quantum-lenet).
 
 
+### Quantum Transfer Learning for Lymph Node Metastases Detection
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/quantum-transfer-learning-metastases/master/assets/quantum-googlenet.png" alt="quantum-googlenet" > The Quantum GoogLeNet model. The quantum layer: the QAOA-inspired ansatz embedding, the particle-conserving entangler, and the expectation value of the Pauli Z operator. <br /> </p>
+
+Transfer learning may make training on a particularly distinguishable dataset easier. It enables several elements of a pre-trained model to be used as the foundation of a new model's architecture. More importantly, we can adopt this approach in quantum machine learning as well. In this project, we seek to implement quantum transfer learning using an ImageNet-pre-trained model, which will be used on the PCam dataset to tackle the lymph node metastases detection problem. The pre-trained model is GoogLeNet (i.e., Inception V1), and the classifier uses hybrid classical-quantum fully connected layers. Typically, quantum layers are made up of embedding, quantum circuits, and measurement. The embedding and quantum circuits are built upon the QAOA-inspired ansatz and particle-conserving entangler, respectively. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/quantum-transfer-learning-metastases).
+
+
 -----
 
 
