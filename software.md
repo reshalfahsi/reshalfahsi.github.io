@@ -344,6 +344,14 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 
 ## Natural Language Processing ##
 
+
+### Question-Answering using GPT-2's PEFT with LoRA ###
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/qa-gpt2-lora/master/assets/qualitative.png" alt="qualitative" > Testing the model on a Winograd schema question. <br /> </p>
+
+Having constrained resources, the most rational way to fine-tune the language model with many parameters is to perform PEFT (parameter-efficient fine-tuning). One of the preferred PEFT methods is LoRA (low-rank adaptation). LoRA can decompose a complex neural network matrix (W) into two smaller matrices (A × B). These matrices are leveraged to re-parameterize the frozen weight of the language model (y = (W + A × B) × x). In this fashion, we can fine-tune the model inexpensively. In this project, we use GPT-2 as the baseline model. Then, LoRA is applied to the attention and linear layers. We fine-tune the model to carry out the question-answering task on the SQuAD 2.0 dataset. Next, the model is evaluated with BLEU 1-gram. The model, LoRA, dataset, and evaluation are available thanks to the Hugging Face ecosystem. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/qa-gpt2-lora).
+
+
 ### Image Captioning With MobileNet-LLaMA 3 ###
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/image-captioning-mobilenet-llama3/master/assets/qualitative-in-the-wild.png" alt="qualitative-in-the-wild" > The result of MobileNet-LLaMA 3 in the wild. <br /> </p>
