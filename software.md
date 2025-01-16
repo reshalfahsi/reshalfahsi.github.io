@@ -345,6 +345,13 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 ## Natural Language Processing ##
 
 
+### RAG-Bot: Chatbot with RAG ###
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/rag-bot/master/assets/qualitative.png" alt="qualitative" > Conversation with RAG-Bot. <br /> </p>
+
+RAG-Bot is a minimalist chatbot built under the RAG (Retrieval-Augmented Generation) edifice. It employs GPT-2 as the generator model, fine-tuned on the open-instruct-v1 dataset. The retrieval process embroils several Wikipedia articles pertaining to AI. Later, the articles are chunked into sentences and subjected to SentenceTransformers, obtaining vector embeddings. The most relevant sentences are then augmented to enhance the user's prompt. Owing to the LangChain framework, this bot performs RAG while conversing with the user seamlessly. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/rag-bot).
+
+
 ### Question-Answering using GPT-2's PEFT with LoRA ###
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/qa-gpt2-lora/master/assets/qualitative.png" alt="qualitative" > Testing the model on a Winograd schema question. <br /> </p>
