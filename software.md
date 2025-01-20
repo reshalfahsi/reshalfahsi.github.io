@@ -7,6 +7,18 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### MedBot: Medical Chatbot with Instruction Fine-Tuning and Conversational Memory ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/medbot-instruct-conversational/master/assets/qualitative.png" width="600">
+
+Conversation about Epilepsy with MedBot.
+</div>
+
+Language can be thought of as a conduit through which our abstract mind is exposed. Recently, the growth of AI has followed this notion, and almost everyone in the world benefits from it on a regular basis, particularly in the medical field. The language-based AI technology has the potential to alter the medical industry by allowing patients to connect with conversational machines. It allows anyone to get medical information from a computer in a more natural way. We can create a chatbot that plays the role of a medical practitioner. MedBot, a chatbot, is built on the well-known LLM, LLaMA 3, with instruction fine-tuning. It follows the directions in the prompt. To alleviate the effort of fine-tuning, the notoriously heavyweight LLM is quantized using 4-bit quantization. Additionally, LoRA (low-rank adaptation) is applied. These methods are collectively referred to as QLoRA. To maximize the fine-tuning efficiency, we have to load the LLM from the Unsloth library. Once the LLM model is fine-tuned, we can funnel it to LangChain, rendering a chatbot with conversational memory. We can converse with the chatbot via the Telegram bot. Last but not least, the fine-tuned LLM is trained and tested on ``Shekswess/medical_llama3_instruct_dataset_short``. Finally, ROUGE is used to measure its quantitative performance. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/medbot-instruct-conversational).
+
+
 ### Visualizing 3D ResNet for Medical Image Classification With Score-CAM ###
 
 
