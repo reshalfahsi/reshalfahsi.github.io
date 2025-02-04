@@ -7,6 +7,20 @@ title: Software
 ## Biomedical Engineering and Life Sciences ##
 
 
+### Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch) ###
+
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/medical-latent-diffusion-model/master/assets/normal.gif" width="600">
+
+Label-conditioned generation of the normal chest X-ray
+</div>
+
+
+By 2021, we have witnessed the unprecedented feat of AI generating high-quality images and reshaping our digital world. We have reached this point thanks to a cutting-edge method: the latent diffusion model. This method is powered by prior research on VAE and diffusion models. Thus, out of curiosity, this project was done to realize the latent diffusion model from scratch. The VAE model employed in this project is VQ-VAE. DDPM is opted in for the diffusion model. Here, the PneumoniaMNIST dataset is used such that the latent diffusion model can generate chest X-ray images from random noise. Also, the generation is conditioned on labels: ``normal`` or ``pneumonia``. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/medbot-instruct-conversational).
+
+
 ### MedBot: Medical Chatbot with Instruction Fine-Tuning and Conversational Memory ###
 
 <div align="center">
