@@ -531,6 +531,15 @@ A naive implementation of a neural network. The code structure is heavily inspir
 ## Robotics ##
 
 
+### Swinging Up Acrobot with n-Step Q-Learning ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/swinging-up-acrobot/master/assets/qualitative_acrobot.gif" width="600">
+
+The Acrobot is a robotic arm with two links vertically suspended against gravity. It is an underactuated robot, and we can only exert torque on its elbow. Our goal is to raise its last link above a specified height indicated by a horizontal line. To fulfill this objective, we can use the n-step Q-learning algorithm, one of the family of TD(n) algorithms. TD(n) is a multi-step extension of TD learning (e.g., Q-learning). In the context of the Acrobot, the n-step Q-learning algorithm learns to select optimal actions (applying torque at the elbow) based on the current state (joint angles and velocities) and the expected future rewards. We could design the reward function to provide positive rewards for reaching the target height and penalties for inefficient movements or exceeding time limits. TD(n) uses the rewards collected over the next n steps plus the discounted Q-value at the n-th step instead of updating the Q-value based on just the immediate reward and the next state’s Q-value (as in TD(0) or the standard TD learning). This multi-step approach allows for better credit assignment over longer horizons, potentially speeding up learning. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/swinging-up-acrobot).
+
+
 ### Rocket Trajectory Optimization Using REINFORCE Algorithm ###
 
 <div align="center">
