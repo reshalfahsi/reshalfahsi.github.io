@@ -531,6 +531,23 @@ A naive implementation of a neural network. The code structure is heavily inspir
 ## Robotics ##
 
 
+### Teaching a Cheetah Robot to Run: Solving Continuous Control in Simulated Locomotion with Proximal Policy Optimization ###
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/reshalfahsi/cheetah-robot-ppo/master/assets/qualitative_cheetah_robot.gif" width="400">
+
+The Cheetah robot sprints predominantly stable in the simulated environment following the learned deterministic policy of PPO.
+
+<br />
+
+</div>
+
+
+This project tackles the challenge of training a simulated Cheetah robot to run efficiently using reinforcement learning, focusing on the complexities of continuous action control. This project employs Proximal Policy Optimization (PPO), a stable and effective policy gradient algorithm, implemented with PyTorch, MuJoCo for realistic physics simulation, and Gymnasium as the environment framework. The policy and value networks, structured as multi-layer perceptrons, model actions via a Gaussian distribution, refined through iterative training with a clipped objective and Generalized Advantage Estimation (GAE) for stability. Key hyperparameters are tuned to optimize performance, and a deterministic policy—using the mean action—is adopted during evaluation to ensure consistency in the deterministic MuJoCo setting. The result is a Cheetah robot that achieves stable, agile locomotion with rising rewards, offering insights into continuous control and potential applications for real-world robotics. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/cheetah-robot-ppo).
+
+
+
 ### Swinging Up Acrobot with n-Step Q-Learning ###
 
 <div align="center">
