@@ -535,7 +535,11 @@ A naive implementation of a neural network. The code structure is heavily inspir
 
 <div align="center">
 
+<a href="https://youtu.be/HemWzE05-q4">
+
 <img src="https://raw.githubusercontent.com/reshalfahsi/cheetah-robot-ppo/master/assets/qualitative_cheetah_robot.gif" width="400">
+
+</a>
 
 The Cheetah robot sprints predominantly stable in the simulated environment following the learned deterministic policy of PPO.
 
