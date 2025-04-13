@@ -564,7 +564,7 @@ The inverted double pendulum is a hallmark of control theory, renowned for its i
 
 <div align="center">
 
-<a href="https://youtu.be/HemWzE05-q4">
+<a href="https://youtu.be/IoySjFlVANY">
 
 <img src="https://raw.githubusercontent.com/reshalfahsi/cheetah-robot-ppo/master/assets/qualitative_cheetah_robot.gif" width="400">
 
