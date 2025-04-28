@@ -289,7 +289,31 @@ title: Software
   <details>
       <summary><b>Robotics</b></summary>
       <ul>
-
+          <li>
+              <a href="#balancing-act-mastering-the-inverted-double-pendulum-with-soft-actor-critic">
+                  Balancing Act: Mastering the Inverted Double Pendulum with Soft Actor-Critic
+              </a>
+          </li>
+          <li>
+              <a href="#teaching-a-cheetah-robot-to-run-solving-continuous-control-in-simulated-locomotion-with-proximal-policy-optimization">
+                  Teaching a Cheetah Robot to Run: Solving Continuous Control in Simulated Locomotion with Proximal Policy Optimization
+              </a>
+          </li>
+          <li>
+              <a href="#swinging-up-acrobot-with-n-step-q-learning">
+                  Swinging Up Acrobot with n-Step Q-Learning
+              </a>
+          </li>
+          <li>
+              <a href="#rocket-trajectory-optimization-using-reinforce-algorithm">
+                  Rocket Trajectory Optimization Using REINFORCE Algorithm
+              </a>
+          </li>
+          <li>
+              <a href="#suction-arm-manipulator-robot">
+                  Suction Arm Manipulator Robot
+              </a>
+          </li>
       </ul>
   </details>
   </td>
@@ -299,7 +323,16 @@ title: Software
   <details>
       <summary><b>Quantum Machine Learning</b></summary>
       <ul>
-
+          <li>
+              <a href="#image-recognition-with-quantum-lenet">
+                  Image Recognition with Quantum LeNet
+              </a>
+          </li>
+          <li>
+              <a href="#quantum-transfer-learning-for-lymph-node-metastases-detection">
+                  Quantum Transfer Learning for Lymph Node Metastases Detection
+              </a>
+          </li>
       </ul>
   </details>
   </td>
