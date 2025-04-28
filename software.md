@@ -4,6 +4,77 @@ title: Software
 ---
 
 
+| Table of Contents |
+|-------------------|
+| <details>
+      <summary>Biomedical Engineering and Life Sciences</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Computer Vision</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Natural Language Processing</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Audio Data</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Graph Data</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Machine Learning</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Robotics</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+| <details>
+      <summary>Quantum Machine Learning</summary>
+      <ul>
+          <li>1.1 Overview</li>
+          <li>1.2 Background</li>
+          <li>1.3 Objectives</li>
+      </ul>
+  </details> |
+
+
+</br>
+
+
 ## Biomedical Engineering and Life Sciences ##
 
 
@@ -369,6 +440,14 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 
 
 ## Natural Language Processing ##
+
+
+### Instruction Fine-tuning of the GPT2MoE Model: GPT-2 with Mixture-of-Experts ##
+
+<p align="center"> <img src="https://github.com/reshalfahsi/gpt2moe-instruct/master/assets/qualitative_telegram.gif" alt="qualitative_telegram" width=250> <br /> Conversing with GPT2MoE via Telegram Bot. It has conversational ability thanks to LangChain. </p>
+
+
+Large Language Models (LLMs) have demonstrated remarkable capabilities in various natural language processing tasks. This project presents **GPT2MoE**, a pre‐trained GPT-2 model with Mixture-of-Experts (MoE) layers, replacing its original feed-forward networks with FFN<sub>SwiGLU</sub>-based experts. This project employs a transfer learning strategy where the original GPT-2 weights are initialized by loading the pre-trained weights, while the weights of the newly introduced MoE layers are trained from scratch. The model is then instruction fine-tuned on the Stanford Alpaca instruction‐tuning dataset using state-of-the-art frameworks, HuggingFace for model handling and PyTorch Lightning for the training infrastructure. This report details the model architecture, the transfer learning and fine-tuning methodology, and presents the experimental results. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/gpt2moe-instruct).
 
 
 ### RAG-Bot: Chatbot with RAG ###
