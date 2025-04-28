@@ -14,7 +14,7 @@ title: Software
       <summary><b>Biomedical Engineering and Life Sciences</b></summary>
       <ul>
           <li>
-              <a href="generating-medical-images-with-the-label-conditioned-latent-diffusion-model-(from-scratch)">
+              <a href="#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-from-scratch">
                   Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)
               </a>
           </li>
