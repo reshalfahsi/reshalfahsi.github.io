@@ -4,64 +4,66 @@ title: Software
 ---
 
 
-| Table of Contents |
-|-------------------|
-| <details>
+<table>
+  <tr>
+  <details>
       <summary>Biomedical Engineering and Life Sciences</summary>
       <ul>
-          <li>1.1 Overview</li>
+          <li>
+              [Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)](#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-(from-scratch)) 
+          </li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details>
+  <details>
       <summary>Computer Vision</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details> 
+  <details>
       <summary>Natural Language Processing</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details>
+  <details>
       <summary>Audio Data</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details>
+  <details>
       <summary>Graph Data</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details> 
+  <details>
       <summary>Machine Learning</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-| <details>
+  </details>
+  <details>
       <summary>Robotics</summary>
       <ul>
           <li>1.1 Overview</li>
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
+  </details>
 | <details>
       <summary>Quantum Machine Learning</summary>
       <ul>
@@ -69,8 +71,9 @@ title: Software
           <li>1.2 Background</li>
           <li>1.3 Objectives</li>
       </ul>
-  </details> |
-
+  </details>
+  </tr>
+</table>
 
 </br>
 
