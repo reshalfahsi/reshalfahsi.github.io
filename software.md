@@ -5,7 +5,6 @@ title: Software
 
 <br>
 <br>
-<br>
 
 <table>
   <tr>
@@ -90,7 +89,91 @@ title: Software
   <details>
       <summary><b>Computer Vision</b></summary>
       <ul>
-
+          <li>
+              <a href="#few-shot-learning-with-reptile">
+                  Few-shot Learning with Reptile
+              </a>
+          </li>
+          <li>
+              <a href="#semi-supervised-learning-with-pseudo-labeling">
+                  Semi-Supervised Learning with Pseudo-Labeling
+              </a>
+          </li>
+          <li>
+              <a href="#instance-segmentation-using-vit-based-mask-r-cnn">
+                  Instance Segmentation Using ViT-based Mask R-CNN
+              </a>
+          </li>
+          <li>
+              <a href="#domain-adaptation-with-domain-adversarial-training-of-neural-networks">
+                  Domain Adaptation With Domain-Adversarial Training of Neural Networks
+              </a>
+          </li>
+          <li>
+              <a href="#image-classification-with-vision-transformer">
+                  Image Classification With Vision Transformer
+              </a>
+          </li>
+          <li>
+              <a href="#image-classification-using-swin-transformer-with-randaugment-cutmix-and-mixup">
+                  Image Classification Using Swin Transformer With RandAugment, CutMix, and MixUp
+              </a>
+          </li>
+          <li>
+              <a href="#multi-object-tracking-using-fcos--deepsort">
+                  Multi-Object Tracking Using FCOS + DeepSORT
+              </a>
+          </li>
+          <li>
+              <a href="#next-frame-prediction-using-convolutional-lstm">
+                  Next-Frame Prediction Using Convolutional LSTM
+              </a>
+          </li>
+          <li>
+              <a href="#point-cloud-segmentation-using-pointnet">
+                  Point Cloud Segmentation Using PointNet
+              </a>
+          </li>
+          <li>
+              <a href="#action-recognition-using-cnn--bidirectional-rnn">
+                  Action Recognition Using CNN + Bidirectional RNN
+              </a>
+          </li>
+          <li>
+              <a href="#novel-view-synthesis-using-nerf">
+                  Novel View Synthesis Using NeRF
+              </a>
+          </li>
+          <li>
+              <a href="#image-super-resolution-using-esrgan">
+                  Image Super-Resolution Using ESRGAN
+              </a>
+          </li>
+          <li>
+              <a href="#zero-reference-low-light-image-enhancement">
+                  Zero-Reference Low-Light Image Enhancement
+              </a>
+          </li>
+          <li>
+              <a href="#anchor-free-object-detection">
+                  Anchor-Free Object Detection
+              </a>
+          </li>
+          <li>
+              <a href="#stable-diffusion-dreaming">
+                  Stable Diffusion Dreaming
+              </a>
+          </li>
+          <li>
+              <a href="#image-captioning-api">
+                  Image Captioning API
+              </a>
+          </li>
+          <li>
+              <a href="#sotodemobot">
+                  SotoDemoBot
+              </a>
+          </li>
       </ul>
   </details>
   </td>
@@ -157,8 +240,6 @@ title: Software
   </tr>
 </table>
 
-
-<br>
 <br>
 <br>
 
