@@ -3,6 +3,9 @@ layout: page
 title: Software 
 ---
 
+<br>
+<br>
+<br>
 
 <table>
   <tr>
@@ -16,6 +19,66 @@ title: Software
           <li>
               <a href="#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-from-scratch">
                   Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)
+              </a>
+          </li>
+          <li>
+              <a href="#medbot-medical-chatbot-with-instruction-fine-tuning-and-conversational-memory">
+                  MedBot: Medical Chatbot with Instruction Fine-Tuning and Conversational Memory
+              </a>
+          </li>
+          <li>
+              <a href="#visualizing-3d-resnet-for-medical-image-classification-with-score-cam">
+                  Visualizing 3D ResNet for Medical Image Classification With Score-CAM
+              </a>
+          </li>
+          <li>
+              <a href="#medical-image-similarity-search-using-a-siamese-network-with-a-contrastive-loss">
+                  Medical Image Similarity Search Using a Siamese Network With a Contrastive Loss
+              </a>
+          </li>
+          <li>
+              <a href="#knowledge-distillation-for-skin-lesion-classification">
+                  Knowledge Distillation for Skin Lesion Classification
+              </a>
+          </li>
+          <li>
+              <a href="#medical-image-latent-space-visualization-using-vq-vae">
+                  Medical Image Latent Space Visualization Using VQ-VAE
+              </a>
+          </li>
+          <li>
+              <a href="#medical-image-generation-using-diffusion-model">
+                  Medical Image Generation Using Diffusion Model
+              </a>
+          </li>
+          <li>
+              <a href="#small-molecular-graph-generation-for-drug-discovery">
+                  Small Molecular Graph Generation for Drug Discovery
+              </a>
+          </li>
+          <li>
+              <a href="#self-supervised-contrastive-learning-for-colon-pathology-classification">
+                  Self-Supervised Contrastive Learning for Colon Pathology Classification
+              </a>
+          </li>
+          <li>
+              <a href="#eeg-motor-imagery-classification-using-cnn-transformer-and-mlp">
+                  EEG Motor Imagery Classification Using CNN, Transformer, and MLP
+              </a>
+          </li>
+          <li>
+              <a href="#covid19ct3d">
+                  COVID19CT3D
+              </a>
+          </li>
+          <li>
+              <a href="#ggb">
+                  GGB
+              </a>
+          </li>
+          <li>
+              <a href="#myqlanet">
+                  MyQLaNet
               </a>
           </li>
       </ul>
@@ -93,6 +156,11 @@ title: Software
   </td>
   </tr>
 </table>
+
+
+<br>
+<br>
+<br>
 
 
 ## Biomedical Engineering and Life Sciences ##
