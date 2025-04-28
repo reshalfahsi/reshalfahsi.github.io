@@ -4,7 +4,7 @@ title: Software
 ---
 
 <br>
-<br>
+
 
 <table>
   <tr>
@@ -183,7 +183,46 @@ title: Software
   <details>
       <summary><b>Natural Language Processing</b></summary>
       <ul>
-
+          <li>
+              <a href="#instruction-fine-tuning-of-the-gpt2moe-model-gpt-2-with-mixture-of-experts">
+                  Instruction Fine-tuning of the GPT2MoE Model: GPT-2 with Mixture-of-Experts
+              </a>
+          </li>
+          <li>
+              <a href="#rag-bot-chatbot-with-rag">
+                  RAG-Bot: Chatbot with RAG
+              </a>
+          </li>
+          <li>
+              <a href="#question-answering-using-gpt-2s-peft-with-lora">
+                  Question-Answering using GPT-2’s PEFT with LoRA
+              </a>
+          </li>
+          <li>
+              <a href="#image-captioning-with-mobilenet-llama-3">
+                  Image Captioning With MobileNet-LLaMA 3
+              </a>
+          </li>
+          <li>
+              <a href="#visual-question-answering-using-clip--lstm">
+                  Visual Question Answering Using CLIP + LSTM
+              </a>
+          </li>
+          <li>
+              <a href="#english-to-german-neural-machine-translation-using-transformer">
+                  English-To-German Neural Machine Translation Using Transformer
+              </a>
+          </li>
+          <li>
+              <a href="#movie-review-sentiment-analysis-using-cnn-and-mlp">
+                  Movie Review Sentiment Analysis Using CNN and MLP
+              </a>
+          </li>
+          <li>
+              <a href="#your-kind-friend-bot-unreliable-chatbot">
+                  Your Kind Friend Bot: Unreliable Chatbot
+              </a>
+          </li>
       </ul>
   </details>
   </td>
@@ -240,7 +279,6 @@ title: Software
   </tr>
 </table>
 
-<br>
 <br>
 
 
