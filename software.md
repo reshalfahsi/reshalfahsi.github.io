@@ -232,7 +232,16 @@ title: Software
   <details>
       <summary><b>Audio Data</b></summary>
       <ul>
-
+          <li>
+              <a href="#ai-cover-song">
+                  AI Cover Song
+              </a>
+          </li>
+          <li>
+              <a href="#music-genre-classification">
+                  Music Genre Classification
+              </a>
+          </li>
       </ul>
   </details>
   </td>
@@ -242,7 +251,16 @@ title: Software
   <details>
       <summary><b>Graph Data</b></summary>
       <ul>
-
+          <li>
+              <a href="#web-traffic-prediction-via-temporal-graph-neural-network">
+                  Web Traffic Prediction via Temporal Graph Neural Network
+              </a>
+          </li>
+          <li>
+              <a href="#graph-neural-network-for-node-classification">
+                  Graph Neural Network for Node Classification
+              </a>
+          </li>
       </ul>
   </details>
   </td>
@@ -252,7 +270,16 @@ title: Software
   <details>
       <summary><b>Machine Learning</b></summary>
       <ul>
-
+          <li>
+              <a href="#pytorch-depthwise-separable-convolution">
+                  PyTorch Depthwise Separable Convolution
+              </a>
+          </li>
+          <li>
+              <a href="#neural-network">
+                  Neural Network
+              </a>
+          </li>
       </ul>
   </details>
   </td>
