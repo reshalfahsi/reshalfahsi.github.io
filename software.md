@@ -5,58 +5,92 @@ title: Software
 
 
 <table>
-  Table of Contents
   <tr>
+    <th>Table of Contents</th>
+  </tr>
+  <tr>
+  <td>
   <details>
       <summary><b>Biomedical Engineering and Life Sciences</b></summary>
       <ul>
           <li>
-              [Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)](#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-(from-scratch)) 
+              <a href="#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-(from-scratch)">
+                  Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)
+              </a>
           </li>
       </ul>
   </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
   <details>
-      <summary>Computer Vision</summary>
-      <ul>
-
-      </ul>
-  </details> 
-  <details>
-      <summary>Natural Language Processing</summary>
+      <summary><b>Computer Vision</b></summary>
       <ul>
 
       </ul>
   </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
   <details>
-      <summary>Audio Data</summary>
+      <summary><b>Natural Language Processing</b></summary>
       <ul>
 
       </ul>
   </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
   <details>
-      <summary>Graph Data</summary>
-      <ul>
-
-      </ul>
-  </details> 
-  <details>
-      <summary>Machine Learning</summary>
+      <summary><b>Audio Data</b></summary>
       <ul>
 
       </ul>
   </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
   <details>
-      <summary>Robotics</summary>
+      <summary><b>Graph Data<</b>/summary>
       <ul>
 
       </ul>
   </details>
- <details>
-      <summary>Quantum Machine Learning</summary>
+  </td>
+  </tr>
+  <tr>
+  <td> 
+  <details>
+      <summary><b>Machine Learning</b></summary>
       <ul>
 
       </ul>
   </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <details>
+      <summary><b>Robotics</b></summary>
+      <ul>
+
+      </ul>
+  </details>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  <details>
+      <summary><b>Quantum Machine Learning</b></summary>
+      <ul>
+
+      </ul>
+  </details>
+  </td>
   </tr>
 </table>
 
