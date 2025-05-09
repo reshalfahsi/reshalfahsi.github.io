@@ -184,6 +184,11 @@ title: Software
       <summary><b>Natural Language Processing</b></summary>
       <ul>
           <li>
+              <a href="#gpt2chat-creating-a-gpt-2-based-chatbot-with-human-preference">
+                  GPT2Chat: Creating a GPT-2-Based Chatbot with Human Preferences
+              </a>
+          </li>
+          <li>
               <a href="#instruction-fine-tuning-of-the-gpt2moe-model-gpt-2-with-mixture-of-experts">
                   Instruction Fine-tuning of the GPT2MoE Model: GPT-2 with Mixture-of-Experts
               </a>
@@ -709,7 +714,17 @@ Simple Object detection Telegram bOt DEMO: predict the objects in the given imag
 ## Natural Language Processing ##
 
 
-### Instruction Fine-tuning of the GPT2MoE Model: GPT-2 with Mixture-of-Experts ##
+### GPT2Chat: Creating a GPT-2-Based Chatbot with Human Preferences ###
+
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/gpt2chat/master/assets/gpt2chat.png" alt="gpt2chat"> <br /> A sample of conversation with GPT2Chat on Colab. </p>
+
+
+In this project, a conversational chatbot named GPT2Chat, based on the GPT-2 language model, is developed. To enable the model to engage in meaningful dialogues, first, instruction fine-tuning is performed using the OpenAssistant Conversations Dataset (OASST1) and the Alpaca dataset. The LLaMA3 instruction template is adopted and adapted by incorporating special tokens ``<|start_context|>`` and ``<|end_context|>`` to encapsulate conversation history, thereby providing contextual awareness to the model. Subsequently, the ORPO method is employed for preference alignment, utilizing the ``trl-lib/ultrafeedback_binarized dataset`` to refine the model's responses based on human feedback. The resulting chatbot demonstrates decent conversational capabilities, leveraging both fine-tuning and preference learning techniques. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/gpt2chat).
+
+
+
+### Instruction Fine-tuning of the GPT2MoE Model: GPT-2 with Mixture-of-Experts ###
 
 <p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/gpt2moe-instruct/master/assets/qualitative_telegram.gif" alt="qualitative_telegram" width=350> <br /> Conversing with GPT2MoE via Telegram Bot. It has conversational ability thanks to LangChain. </p>
 
