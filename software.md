@@ -184,7 +184,7 @@ title: Software
       <summary><b>Natural Language Processing</b></summary>
       <ul>
           <li>
-              <a href="#gpt2chat-creating-a-gpt-2-based-chatbot-with-human-preference">
+              <a href="#gpt2chat-creating-a-gpt-2-based-chatbot-with-human-preferences">
                   GPT2Chat: Creating a GPT-2-Based Chatbot with Human Preferences
               </a>
           </li>
