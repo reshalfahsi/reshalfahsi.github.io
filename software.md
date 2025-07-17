@@ -90,6 +90,11 @@ title: Software
       <summary><b>Computer Vision</b></summary>
       <ul>
           <li>
+              <a href="#exploring-latent-space-via-vae">
+                  Exploring Latent Space via VAE
+              </a>
+          </li>
+          <li>
               <a href="#few-shot-learning-with-reptile">
                   Few-shot Learning with Reptile
               </a>
@@ -517,6 +522,13 @@ MyQLaNet is a Deep Learning platform for macula detection. It provides end to en
 
 
 ## Computer Vision ##
+
+
+### Exploring Latent Space via VAE ###
+
+<p align="center"> <img src="https://raw.githubusercontent.com/reshalfahsi/latent-space-vae/main/assets/latent_space_grid.png" alt="latent_space_grid" > <br /> The 2D latent space in a 15 × 15 image grid </p>
+
+VAE and the latent space are the inseparable duo in representation learning. VAE uses the latent space as a constraint on how excellent data reconstruction should be. With a controlled latent space, we can simply regulate the data-generating process. On this occasion, we will go on an excursion across a latent space. We'll see what we can do in this "Chamber of Secrets." In the latent space, latent vectors (or variables) coexist harmoniously. Let's see "Fantastic Latent Vectors and How to Find Them." This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/latent-space-vae).
 
 
 ### Few-shot Learning with Reptile ###
