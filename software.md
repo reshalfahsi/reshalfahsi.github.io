@@ -363,9 +363,8 @@ title: Software
 ### Generating Dermatoscopic Images With the Deep Energy-Based Model ###
 
 <p align="center"> 
-
-<img src="https://github.com/reshalfahsi/dermatoscopic-debm/blob/main/assets/image_per_step_0.png" alt="image_per_step_0" >
-<img src="https://github.com/reshalfahsi/dermatoscopic-debm/blob/main/assets/image_per_step_animation_0.gif" width=400 alt="image_per_step_animation_0" > 
+<img src="https://raw.githubusercontent.com/reshalfahsi/dermatoscopic-debm/main/assets/image_per_step_0.png" alt="image_per_step_0" >
+<img src="https://raw.githubusercontent.com/reshalfahsi/dermatoscopic-debm/main/assets/image_per_step_animation_0.gif" width=400 alt="image_per_step_animation_0" > 
 <br /> 
 
 Transition from a random noise to a generated dermatoscopic image  
