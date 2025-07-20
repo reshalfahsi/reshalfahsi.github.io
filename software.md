@@ -16,6 +16,11 @@ title: Software
       <summary><b>Biomedical Engineering and Life Sciences</b></summary>
       <ul>
           <li>
+              <a href="#generating-dermatoscopic-images-with-the-deep-energy-based-model">
+                  Generating Dermatoscopic Images With the Deep Energy-Based Model
+              </a>
+          </li>
+          <li>
               <a href="#generating-medical-images-with-the-label-conditioned-latent-diffusion-model-from-scratch">
                   Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch)
               </a>
@@ -353,6 +358,22 @@ title: Software
 
 
 ## Biomedical Engineering and Life Sciences ##
+
+
+### Generating Dermatoscopic Images With the Deep Energy-Based Model ###
+
+<p align="center"> 
+
+<img src="https://github.com/reshalfahsi/dermatoscopic-debm/blob/main/assets/image_per_step_0.png" alt="image_per_step_0" >
+<img src="https://github.com/reshalfahsi/dermatoscopic-debm/blob/main/assets/image_per_step_animation_0.gif" width=400 alt="image_per_step_animation_0" > 
+<br /> 
+
+Transition from a random noise to a generated dermatoscopic image  
+
+</p>
+
+
+Implicit generative models (e.g., diffusion models and GANs) are a promising avenue in which data generation bypasses the explicit restriction of adhering to the normalized data distribution. In the wake of deep learning, Energy-Based Models have jumped onto this path even harder. In the paper *"Implicit Generation and Modeling with Energy-Based Models"*, a deep learning model is used to model a negative energy function $-E\_\theta(x)$. The energy function defines the data probability distribution $q\_\theta(x)$ and an implicit generator by means of Langevin dynamics. It is optimized to assign low energy to real samples and high energy to generated ones. Next, the learned energy landscape is leveraged by Langevin dynamics for sample generation via stochastic gradient-based updates. The model is trained using contrastive divergence, comparing the energy of real images with that of synthetic samples initialized from noise (kind of similar to what Wasserstein GAN optimizes). The contrastive divergence stems from maximum likelihood estimation (MLE) of $q\_\theta(x)$. By doing so, we basically train a score-based model (reminiscent to diffusion models). Experimental results demonstrate that even a simple convolutional energy network can capture meaningful structure in medical image data and generate realistic dermatoscopic samples. It highlights the feasibility of applying EBMs in medical imaging and underscores their potential as a generative modeling tool in healthcare applications. This project's source code is hosted on [GitHub](https://github.com/reshalfahsi/dermatoscopic-debm).
 
 
 ### Generating Medical Images with the Label-Conditioned Latent Diffusion Model (From Scratch) ###
