@@ -194,7 +194,7 @@ title: Software
       <summary><b>Natural Language Processing</b></summary>
       <ul>
           <li>
-              <a href="#mlm-bert-multi-gpu">
+              <a href="#masked-language-modeling-with-bert-in-multi-gpu-settings">
                   Masked Language Modeling with BERT in Multi-GPU Settings
               </a>
           </li>
