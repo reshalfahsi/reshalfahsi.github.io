@@ -3,6 +3,44 @@ layout: default
 title: Home
 ---
 
+
+<style>
+    .contact-widget {
+      max-width: 600px;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .contact-widget h2 {
+      margin: 0 0 15px;
+      font-size: 1.5em;
+    }
+    .contact-table {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .contact-table a {
+      display: inline-block;
+      text-decoration: none;
+      color: #007bff;
+    }
+    .contact-table a:hover img {
+      opacity: 0.7;
+    }
+    .contact-table img {
+      width: 32px;
+      height: 32px;
+      transition: opacity 0.3s;
+    }
+    .contact-table span {
+      display: block;
+      font-size: 0.9em;
+      margin-top: 5px;
+      color: #333;
+    }
+</style>
+
 <div align="center">
 
     <img src="{{site.baseurl}}public/image.png" width=300 style="float:right margin-left=10cm"> 
@@ -26,6 +64,24 @@ title: Home
 <p>I am a research engineer with extensive experience in artificial intelligence and robotics, specializing in computer vision and machine learning. My work includes publishing peer-reviewed research on face recognition, object detection, and biomedical image segmentation, as well as contributing to the development of efficient AI models for both cloud-based systems and edge devices. In addition to my core expertise, I maintain a strong interest in natural language processing and life sciences.</p>
 
 <p>I am open to opportunities in AI research, applied machine learning, and computer vision engineering.</p>
+
+<div class="contact-widget">
+    <h2>Contact Me</h2>
+    <div class="contact-table">
+      <a href="mailto:resha.alfahsi@gmail.com" title="Email">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Email Icon">
+        <span>Email</span>
+      </a>
+      <a href="https://x.com/reshalfahsi" target="_blank" title="X">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/X_icon_2.svg" alt="X Icon">
+        <span>X</span>
+      </a>
+      <a href="https://www.linkedin.com/in/reshalfahsi" target="_blank" title="LinkedIn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Icon">
+        <span>LinkedIn</span>
+      </a>
+    </div>
+</div>
 
 <hr>
 <h3>🎓 Education</h3>
@@ -67,15 +123,70 @@ title: Home
 <ul>
     <li>
         <p>Research Assistant, <b>UGM AI CENTER</b>, Yogyakarta (Indonesia), Jun 2019 - Dec 2020  </p>
+        <ul>
+            <li>
+                <p>Developed back-end of automated machine learning pipeline for data scientists to increase productivity. The back end is written in Python with API built upon FastAPI.</p>
+            </li>
+            <li>
+                <p>Devised service robot platform. The platform is based on ROS. It manages streams of information that are processed and used for motion planning, SLAM, and human-robot interaction (HRI) of the robot.</p>
+            </li>
+            <li>
+                <p>Helped in writing and publishing scientific papers.</p>
+            </li>
+        </ul>
     </li>
     <li>
         <p>AI Engineer (Intern), <b>Neurabot</b>, Yogyakarta (Indonesia), Dec 2020 - Mar 2021 </p>
+        <ul>
+            <li>
+                <p>Developed a web-based auto-tagging system for medical image labeling. It will segment the salient
+objects that are present on the scene. The auto-tagging model is based on DEXTR.</p>
+            </li>
+            <li>
+                <p>Devised micro-scanner firmware for medical imaging. The firmware is built upon PlatformIO. The
+micro-scanner is intended to perform whole slide image acquisition.</p>
+            </li>
+        </ul>
     </li>
     <li>
         <p>Junior Machine Learning Engineer, <b>Techbros</b>, Remote (Germany), May 2021 - Mar 2022  </p>
+        <ul>
+            <li>
+                <p>Designed and maintained <b>elangai</b>, an AI inference engine platform for edge devices. The framework offers CLI commands that create and execute a project template, convert an optimized deep learning model into a consumable file, and inspect the model. The framework is written in Python.</p>
+            </li>
+            <li>
+                <p>Created and built AI projects using <b>elangai</b>. The projects mostly are computer vision problems, e.g., plant disease classification, face mask detection, face recognition, and license plate recognition. These projects are deployed on edge devices, especially NVIDIA Jetson.</p>
+            </li>
+        </ul>
     </li>
     <li>
         <p>Research Assistant, <b>UGM AI CENTER</b>, Yogyakarta (Indonesia), Jul 2022 - Dec 2024  </p>
+        <ul>
+            <li>
+                <p>Conducting research on knowledge distillation for medical image segmentation in robotics colonoscopy.</p>
+            </li>
+            <li>
+                <p>Proposed novel architectures for medical image segmentation. The architecture is composed of Transformer- and CNN-based components. Its performance is evaluated on three different datasets concerning medical image segmentation tasks, i.e., medical instrument segmentation, lesion segmentation, and anatomical structure segmentation.</p>
+            </li>
+            <li>
+                <p>Helped to develop a deep learning model for monocular depth estimation. The model is a modification based on U-Net. Its performance is validated on KITTI and NYU Depth V2.</p>
+            </li>
+            <li>
+                <p>Involved in research on a novel lightweight model for segmentation of unstructured off-road images. The model is trained and evaluated on ORFD, RUGD, and RELLIS-3D.</p>
+            </li>
+            <li>
+                <p>Carried out a project on geospatial image segmentation with UNetFormer. Images are taken from a low-altitude aerial vehicle.</p>
+            </li>
+            <li>
+                <p>Implementing ensemble machine learning models on large-scale data in the insurance industry. The models are maintained and deployed with orchestrated microservices. The models are trained at a scheduled interval. The prediction results are visualized and interpreted through the informative graphical UI.</p>
+            </li>
+            <li>
+                <p>Helped in writing and publishing scientific papers.</p>
+            </li>
+            <li>
+                <p>Providing reviews, recommendations, and discussions to the employees of an oil and gas company about data science platforms and their use in the industry.</p>
+            </li>
+        </ul>
     </li>
 </ul>
 <hr>
